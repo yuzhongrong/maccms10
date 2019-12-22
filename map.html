@@ -1,0 +1,1825 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>免费电影 - 苹果CMS</title>
+    <link href="/static/css/home.css" rel="stylesheet" type="text/css" />
+<link href="/template/default_pc/css/style.css" rel="stylesheet" type="text/css" />
+<script src="/static/js/jquery.js"></script>
+<script src="/static/js/jquery.lazyload.js"></script>
+<script src="/static/js/jquery.autocomplete.js"></script>
+<script src="/template/default_pc/js/jquery.superslide.js"></script>
+<script src="/template/default_pc/js/jquery.lazyload.js"></script>
+<script src="/template/default_pc/js/jquery.base.js"></script>
+<script>var maccms={"path":"","mid":"","aid":"2","url":"1.cn","wapurl":"www.1.cn","mob_status":"0"};</script>
+<script src="/static/js/home.js"></script>
+<script></script>
+
+</head>
+<body>
+<!-- 页头 -->
+<div class="header">
+    <div id="logo"><a href="/" title="免费电影 - 苹果CMS"><img src="/static/images/logo.jpg" alt="免费电影 - 苹果CMS" /></a></div>
+    <div id="searchbar">
+        <div class="ui-search">
+            <form id="search" name="search" method="get" action="/index.php/vod/search.html" onSubmit="return qrsearch();">
+                <input type="text" name="wd" class="search-input mac_wd" value="" placeholder="请在此处输入影片名或演员名称" />
+                <input type="submit" id="searchbutton"  class="search-button mac_search" value="搜索影片" />
+            </form>
+        </div>
+        <div class="hotkeys">热搜：
+                        <a href="/index.php/vod/search/wd/%E5%8F%98%E5%BD%A2%E9%87%91%E5%88%9A.html">变形金刚</a>
+                        <a href="/index.php/vod/search/wd/%E7%81%AB%E5%BD%B1%E5%BF%8D%E8%80%85.html">火影忍者</a>
+                        <a href="/index.php/vod/search/wd/%E5%A4%8D%E4%BB%87%E8%80%85%E8%81%94%E7%9B%9F.html">复仇者联盟</a>
+                        <a href="/index.php/vod/search/wd/%E6%88%98%E7%8B%BC.html">战狼</a>
+                        <a href="/index.php/vod/search/wd/%E7%BA%A2%E6%B5%B7%E8%A1%8C%E5%8A%A8.html">红海行动</a>
+                    </div>
+    </div>
+    <ul id="qire-plus">
+        <li><a href="/index.php/label/rank.html" class=""><i class="ui-icon top-icon"></i>排行</a></li>
+        <li><a href="/index.php/gbook/index.html"><i class="ui-icon gb-icon"></i>留言</a></li>
+        <li><a href="javascript:void(0);" style="cursor:hand; background:none;" onclick="MAC.Fav(location.href,document.title);"><i class="ui-icon fav-icon"></i>收藏</a></li>
+    </ul>
+</div>
+<!-- 导航菜单 -->
+<div id="navbar">
+    <div class="layout fn-clear">
+        <ul id="nav" class="ui-nav">
+            <li class="nav-item "><a class="nav-link" href="/">网站首页</a></li>
+                        <li class="nav-item 1=0"><a class="nav-link" href="/index.php/vod/type/id/1.html">电影</a></li>
+                        <li class="nav-item 2=0"><a class="nav-link" href="/index.php/vod/type/id/2.html">连续剧</a></li>
+                        <li class="nav-item 3=0"><a class="nav-link" href="/index.php/vod/type/id/3.html">综艺</a></li>
+                        <li class="nav-item 4=0"><a class="nav-link" href="/index.php/vod/type/id/4.html">动漫</a></li>
+                        <li class="nav-item 5=0"><a class="nav-link" href="/index.php/art/type/id/5.html">资讯</a></li>
+                        <li class="nav-item "><a class="nav-link" href="/index.php/topic/index.html">专题</a></li>
+            <li class="nav-item mac_user"><a class="nav-link" href="javascript:;">会员</a></li>
+            <li class="nav-item"><a class="nav-link" href="/index.php/map/index.html" style=" margin-left:102px; padding:0 0 0 30px; background:url(/template/default_pc/images/ico.png) no-repeat left center;">最近更新</a></li>
+        </ul>
+    </div>
+</div>
+<!--当前位置-->
+<div class="bread-crumb-nav fn-clear">
+    <ul class="bread-crumbs">
+        <li class="home"><a href="index.html">首页</a></li>
+        <li>最近100个更新</li>
+        <li class="back"><a href="javascript:MAC.GoBack()">返回上一页</a></li>
+    </ul>
+</div>
+<!--列表部分-->
+<div class="ui-box ui-qire fn-clear" id="qire-lasted">
+    <div class="ui-title fn-clear">
+        <h2>最近100个更新</h2>
+        <div class="lasted-time fn-right">更新时间</div>
+        <div class="lasted-tags fn-right">标签</div>
+        <div class="lasted-type fn-right">类型</div>
+    </div>
+    <div class="ui-cnt">
+        <ul class="lasted-list fn-clear">
+                        <li><div class="lasted-num fn-left">∷</div>
+            <div class="lasted-tit fn-left">
+                <h5 class="show-tipinfo"><a href="/index.php/vod/detail/id/5639.html">麻辣拳拳</a><em>/</em></h5>
+                <div class="tipInfo">
+                    <div class="play-img"><img src="https://cn2.3days.cc/1572064883244252.jpeg" alt="麻辣拳拳" /></div>
+                    <dl>
+                        <dt>麻辣拳拳</dt>
+                        <dd><label>主演：</label></dd>
+                        <dd><label>剧情：</label>不知道现实生活中的真情侣Pattie和Dan在剧中会摩擦出怎样的火花，可爱婆婆Ann和假媳妇Pattie之间又有怎样令人忍俊不禁的大作战由Pattie、Dan和Ann三位演员合作带来的爱情喜剧《麻辣拳…</dd>
+                        <dd class="bg">状态：<br />更新时间：2019-12-21 23:00:57</dd>
+                    </dl>
+                </div>
+            </div>
+            <div class="lasted-type fn-left"><a href="/index.php/vod/type/id/16.html"></a></div>
+            <div class="lasted-tags fn-left"><a href='/index.php/vod/list/area/%E6%B3%B0%E5%9B%BD/id/16.html' target='_blank'>泰国</a> </div>
+            <div class="lasted-time fn-right">2019-12-21</div>
+            </li>
+                        <li><div class="lasted-num fn-left">∷</div>
+            <div class="lasted-tit fn-left">
+                <h5 class="show-tipinfo"><a href="/index.php/vod/detail/id/5638.html">酒店之星</a><em>/</em></h5>
+                <div class="tipInfo">
+                    <div class="play-img"><img src="https://cn2.3days.cc/1573801389447947.jpeg" alt="酒店之星" /></div>
+                    <dl>
+                        <dt>酒店之星</dt>
+                        <dd><label>主演：</label>苏拉德·皮凌瓦,达维·格凌陂勒,帕努瓦·可通塔维,胡光平</dd>
+                        <dd><label>剧情：</label>每年，LP Paradise Hotel都会在“酒店星级”项目中仅接受来自全国大学的10个实习机会，十分之二将有机会获得出色的实习机会实习结束后将立即作为酒店工作人员 有薪水和福利 极高的服务费 优秀…</dd>
+                        <dd class="bg">状态：<br />更新时间：2019-12-21 23:00:57</dd>
+                    </dl>
+                </div>
+            </div>
+            <div class="lasted-type fn-left"><a href="/index.php/vod/type/id/16.html"></a></div>
+            <div class="lasted-tags fn-left"><a href='/index.php/vod/list/area/%E6%B3%B0%E5%9B%BD/id/16.html' target='_blank'>泰国</a> </div>
+            <div class="lasted-time fn-right">2019-12-21</div>
+            </li>
+                        <li><div class="lasted-num fn-left">∷</div>
+            <div class="lasted-tit fn-left">
+                <h5 class="show-tipinfo"><a href="/index.php/vod/detail/id/5637.html">一年365天：我的房子你的家</a><em>/</em></h5>
+                <div class="tipInfo">
+                    <div class="play-img"><img src="https://cn2.3days.cc/1575126292615514.jpeg" alt="一年365天：我的房子你的家" /></div>
+                    <dl>
+                        <dt>一年365天：我的房子你的家</dt>
+                        <dd><label>主演：</label>切尔普朗·阿瑞库尔,吉拉育·拉翁马尼,Mam,Kathaleeya,Doo,Sanya,Fond,BNK48,Wee,BNK48,Juné,BNK48,Mewnich,BNK48,Namsai,BNK48,Pun,BNK48,Jane,BNK48,Ice,Nattarat</dd>
+                        <dd><label>剧情：</label>                                　　一群女孩的母亲（Mam Kathaleeya饰）与两个孩子的爸爸（Doo Sanya饰）即将再婚，但被大女儿（Cherprang饰）…</dd>
+                        <dd class="bg">状态：<br />更新时间：2019-12-21 23:00:57</dd>
+                    </dl>
+                </div>
+            </div>
+            <div class="lasted-type fn-left"><a href="/index.php/vod/type/id/16.html"></a></div>
+            <div class="lasted-tags fn-left"><a href='/index.php/vod/list/area/%E6%B3%B0%E5%9B%BD/id/16.html' target='_blank'>泰国</a> </div>
+            <div class="lasted-time fn-right">2019-12-21</div>
+            </li>
+                        <li><div class="lasted-num fn-left">∷</div>
+            <div class="lasted-tit fn-left">
+                <h5 class="show-tipinfo"><a href="/index.php/vod/detail/id/5636.html">又见莲花</a><em>/</em></h5>
+                <div class="tipInfo">
+                    <div class="play-img"><img src="https://cn2.3days.cc/1576936486716810.jpeg" alt="又见莲花" /></div>
+                    <dl>
+                        <dt>又见莲花</dt>
+                        <dd><label>主演：</label>杨叙辰,吕熙,李鸿杰,阳蕾,徐敏,章申,何绍宏</dd>
+                        <dd><label>剧情：</label>1999年澳门回归前夕，雕塑大师顾松林为创作中央政府赠送给澳门特区的雕塑“盛世莲花”去澳门采风，与廖记木雕店掌门人廖济昌成为挚友 十年后，“木雕-神像雕刻”成为澳门第一项获得“国家非物质文化遗产”荣誉…</dd>
+                        <dd class="bg">状态：<br />更新时间：2019-12-21 23:00:57</dd>
+                    </dl>
+                </div>
+            </div>
+            <div class="lasted-type fn-left"><a href="/index.php/vod/type/id/11.html"></a></div>
+            <div class="lasted-tags fn-left"><a href='/index.php/vod/list/area/%E4%B8%AD%E5%9B%BD%E5%A4%A7%E9%99%86/id/11.html' target='_blank'>中国大陆</a> </div>
+            <div class="lasted-time fn-right">2019-12-21</div>
+            </li>
+                        <li><div class="lasted-num fn-left">∷</div>
+            <div class="lasted-tit fn-left">
+                <h5 class="show-tipinfo"><a href="/index.php/vod/detail/id/5635.html">孤独的美食家第八季</a><em>/</em></h5>
+                <div class="tipInfo">
+                    <div class="play-img"><img src="https://cn2.3days.cc/1569947969449720.jpeg" alt="孤独的美食家第八季" /></div>
+                    <dl>
+                        <dt>孤独的美食家第八季</dt>
+                        <dd><label>主演：</label>松重丰,久住昌之</dd>
+                        <dd><label>剧情：</label>《孤独的美食家》第八季将在10月播出！——又可以看五郎吃饭了！
+…</dd>
+                        <dd class="bg">状态：<br />更新时间：2019-12-21 23:00:57</dd>
+                    </dl>
+                </div>
+            </div>
+            <div class="lasted-type fn-left"><a href="/index.php/vod/type/id/15.html"></a></div>
+            <div class="lasted-tags fn-left"><a href='/index.php/vod/list/area/%E6%97%A5%E6%9C%AC/id/15.html' target='_blank'>日本</a> </div>
+            <div class="lasted-time fn-right">2019-12-21</div>
+            </li>
+                        <li><div class="lasted-num fn-left">∷</div>
+            <div class="lasted-tit fn-left">
+                <h5 class="show-tipinfo"><a href="/index.php/vod/detail/id/5634.html">红崖村的孩子们</a><em>/</em></h5>
+                <div class="tipInfo">
+                    <div class="play-img"><img src="https://cn2.3days.cc/1576935454249649.jpeg" alt="红崖村的孩子们" /></div>
+                    <dl>
+                        <dt>红崖村的孩子们</dt>
+                        <dd><label>主演：</label>余悦天,陈尚均</dd>
+                        <dd><label>剧情：</label>村小唯一的老师参加了抗日游击队，秋阳姐将村里的孩子们组织起来成立的儿童团勇敢的儿童团员们不仅冒险掩护了受伤的八路军侦察员，还巧妙地躲过了日伪军的盘查，将500支红缨枪头运送到了牙山。孩子们用自己的方式…</dd>
+                        <dd class="bg">状态：<br />更新时间：2019-12-21 23:00:57</dd>
+                    </dl>
+                </div>
+            </div>
+            <div class="lasted-type fn-left"><a href="/index.php/vod/type/id/11.html"></a></div>
+            <div class="lasted-tags fn-left"><a href='/index.php/vod/list/area/%E4%B8%AD%E5%9B%BD%E5%A4%A7%E9%99%86/id/11.html' target='_blank'>中国大陆</a> </div>
+            <div class="lasted-time fn-right">2019-12-21</div>
+            </li>
+                        <li><div class="lasted-num fn-left">∷</div>
+            <div class="lasted-tit fn-left">
+                <h5 class="show-tipinfo"><a href="/index.php/vod/detail/id/5633.html">过失</a><em>/</em></h5>
+                <div class="tipInfo">
+                    <div class="play-img"><img src="https://cn2.3days.cc/1576935069264914.jpeg" alt="过失" /></div>
+                    <dl>
+                        <dt>过失</dt>
+                        <dd><label>主演：</label>杰米·西弗斯,马克·博纳尔,露丝·布莱德利</dd>
+                        <dd><label>剧情：</label>　Jamie Sives及Mark Bonnar将主演BBC 4集剧《过失 Guilt》（正确说法是，这剧是BBC Scotland线上频道的首部剧集，然后会在BBC Two播出），Neil Fors…</dd>
+                        <dd class="bg">状态：<br />更新时间：2019-12-21 23:00:57</dd>
+                    </dl>
+                </div>
+            </div>
+            <div class="lasted-type fn-left"><a href="/index.php/vod/type/id/16.html"></a></div>
+            <div class="lasted-tags fn-left"><a href='/index.php/vod/list/area/%E8%8B%B1%E5%9B%BD/id/16.html' target='_blank'>英国</a> </div>
+            <div class="lasted-time fn-right">2019-12-21</div>
+            </li>
+                        <li><div class="lasted-num fn-left">∷</div>
+            <div class="lasted-tit fn-left">
+                <h5 class="show-tipinfo"><a href="/index.php/vod/detail/id/5632.html">联合王国</a><em>/</em></h5>
+                <div class="tipInfo">
+                    <div class="play-img"><img src="https://cn2.3days.cc/1576932007724730.jpeg" alt="联合王国" /></div>
+                    <dl>
+                        <dt>联合王国</dt>
+                        <dd><label>主演：</label>大卫·奥伊罗,裴淳华,汤姆·费尔顿,杰克·达文波特,劳拉·卡尔迈克尔,特里·费托,杰西卡·奥伊罗,武西·库尼恩,尼古拉斯·林德赫斯特,阿诺德·奥康,阿纳</dd>
+                        <dd><label>剧情：</label>上世纪40年代，博兹瓦纳开国总统赛莱兹·卡马与英国女性露丝·威廉姆斯的婚礼轰动世界，黑白人种通婚，引起了双方家族、甚至两国政府的反对…</dd>
+                        <dd class="bg">状态：<br />更新时间：2019-12-21 23:00:57</dd>
+                    </dl>
+                </div>
+            </div>
+            <div class="lasted-type fn-left"><a href="/index.php/vod/type/id/11.html"></a></div>
+            <div class="lasted-tags fn-left"><a href='/index.php/vod/list/area/%E6%8D%B7%E5%85%8B/id/11.html' target='_blank'>捷克</a> </div>
+            <div class="lasted-time fn-right">2019-12-21</div>
+            </li>
+                        <li><div class="lasted-num fn-left">∷</div>
+            <div class="lasted-tit fn-left">
+                <h5 class="show-tipinfo"><a href="/index.php/vod/detail/id/5631.html">请把你的窗户打开</a><em>/</em></h5>
+                <div class="tipInfo">
+                    <div class="play-img"><img src="https://cn2.3days.cc/1576932545174659.jpeg" alt="请把你的窗户打开" /></div>
+                    <dl>
+                        <dt>请把你的窗户打开</dt>
+                        <dd><label>主演：</label>杨心仪,胡玺龙,幺依田,段游,刘一辰</dd>
+                        <dd><label>剧情：</label>小雪家对面一扇从未打开窗户的房间里住着一位孤独的老人一个雨天，小雪发现了坐在雨中神情悲伤的老人。善解人意的她陪着老人静坐在风雨中。
+                                  …</dd>
+                        <dd class="bg">状态：<br />更新时间：2019-12-21 23:00:57</dd>
+                    </dl>
+                </div>
+            </div>
+            <div class="lasted-type fn-left"><a href="/index.php/vod/type/id/11.html"></a></div>
+            <div class="lasted-tags fn-left"><a href='/index.php/vod/list/area/%E4%B8%AD%E5%9B%BD%E5%A4%A7%E9%99%86/id/11.html' target='_blank'>中国大陆</a> </div>
+            <div class="lasted-time fn-right">2019-12-21</div>
+            </li>
+                        <li><div class="lasted-num fn-left">∷</div>
+            <div class="lasted-tit fn-left">
+                <h5 class="show-tipinfo"><a href="/index.php/vod/detail/id/5584.html">精英律师</a><em>/</em></h5>
+                <div class="tipInfo">
+                    <div class="play-img"><img src="https://cn2.3days.cc/1576895892822276.jpeg" alt="精英律师" /></div>
+                    <dl>
+                        <dt>精英律师</dt>
+                        <dd><label>主演：</label>靳东,蓝盈莹,孙淳,田雨,刘敏涛,朱珠,代旭,王鸥,邬君梅,海一天,王阳,许娣,袁泉,蒋欣,凌潇肃,张晞临,李宗翰,雷佳音,乔振宇,王晓晨,李乃文,左小青,辛柏青,</dd>
+                        <dd><label>剧情：</label>新丽传媒都市律政情感剧《精英律师》讲述了罗槟是全景律师事务所资深合伙人，戴曦为了闺蜜的一场官司去律所找罗槟理论，误打误撞，机缘巧合成了罗槟的助理在共事过程中，俩人因在为人处世上的见解差异，频发冲突。同…</dd>
+                        <dd class="bg">状态：<br />更新时间：2019-12-21 23:00:57</dd>
+                    </dl>
+                </div>
+            </div>
+            <div class="lasted-type fn-left"><a href="/index.php/vod/type/id/13.html"></a></div>
+            <div class="lasted-tags fn-left"><a href='/index.php/vod/list/area/%E4%B8%AD%E5%9B%BD%E5%A4%A7%E9%99%86/id/13.html' target='_blank'>中国大陆</a> </div>
+            <div class="lasted-time fn-right">2019-12-21</div>
+            </li>
+                        <li><div class="lasted-num fn-left">∷</div>
+            <div class="lasted-tit fn-left">
+                <h5 class="show-tipinfo"><a href="/index.php/vod/detail/id/5558.html">欢乐集结号</a><em>/</em></h5>
+                <div class="tipInfo">
+                    <div class="play-img"><img src="https://cn2.3days.cc/1562583930284382.jpeg" alt="欢乐集结号" /></div>
+                    <dl>
+                        <dt>欢乐集结号</dt>
+                        <dd><label>主演：</label>董凯,文杰,璐璐,王旭,王群</dd>
+                        <dd><label>剧情：</label>《欢乐集结号》在娱乐资讯类栏目中一枝独秀，领跑全国，是辽宁卫视唯一一档以报道娱乐动态、解读文化现象、重温经典作品为内容的专题栏目以东北独有的幽默文化为立足点，全面整合辽视独家资源，时时追踪欢乐经典、明…</dd>
+                        <dd class="bg">状态：<br />更新时间：2019-12-21 23:00:57</dd>
+                    </dl>
+                </div>
+            </div>
+            <div class="lasted-type fn-left"><a href="/index.php/vod/type/id/3.html"></a></div>
+            <div class="lasted-tags fn-left"><a href='/index.php/vod/list/area/%E4%B8%AD%E5%9B%BD%E5%A4%A7%E9%99%86/id/3.html' target='_blank'>中国大陆</a> </div>
+            <div class="lasted-time fn-right">2019-12-21</div>
+            </li>
+                        <li><div class="lasted-num fn-left">∷</div>
+            <div class="lasted-tit fn-left">
+                <h5 class="show-tipinfo"><a href="/index.php/vod/detail/id/5483.html">大明风华 </a><em>/</em></h5>
+                <div class="tipInfo">
+                    <div class="play-img"><img src="https://cn2.3days.cc/1576593976145374.jpeg" alt="大明风华 " /></div>
+                    <dl>
+                        <dt>大明风华 </dt>
+                        <dd><label>主演：</label>汤唯,朱亚文,邓家佳,乔振宇,王学圻,张艺兴,俞灏明,吴越,梁冠华,栾元晖,李昕亮,苏可,师悦玲,孙耀琦,赵韩樱子,唐鉴军,孙骁骁,隆妮</dd>
+                        <dd><label>剧情：</label>                                　　明朝建文四年，朱棣率兵攻下帝都应天，御史大夫景清夫妻罹难，长女若微被副将孙愚所救，次女蔓茵为太子朱高炽所救骨肉同胞，一在宫中，一在江…</dd>
+                        <dd class="bg">状态：<br />更新时间：2019-12-21 23:00:57</dd>
+                    </dl>
+                </div>
+            </div>
+            <div class="lasted-type fn-left"><a href="/index.php/vod/type/id/13.html"></a></div>
+            <div class="lasted-tags fn-left"><a href='/index.php/vod/list/area/%E4%B8%AD%E5%9B%BD%E5%A4%A7%E9%99%86/id/13.html' target='_blank'>中国大陆</a> </div>
+            <div class="lasted-time fn-right">2019-12-21</div>
+            </li>
+                        <li><div class="lasted-num fn-left">∷</div>
+            <div class="lasted-tit fn-left">
+                <h5 class="show-tipinfo"><a href="/index.php/vod/detail/id/5463.html">寻情记</a><em>/</em></h5>
+                <div class="tipInfo">
+                    <div class="play-img"><img src="https://cn2.3days.cc/1564621920782629.jpeg" alt="寻情记" /></div>
+                    <dl>
+                        <dt>寻情记</dt>
+                        <dd><label>主演：</label>王燕</dd>
+                        <dd><label>剧情：</label>十四年王牌节目，获得国家新闻出版广电总局“省级地面频道十强节目”，获得中国广播电视协会颁发的“全国广播电视优秀民生栏目”由全国“金话筒”奖得主王燕担纲主持。记录普通人的情感传奇，寻求中国家庭的幸福之道…</dd>
+                        <dd class="bg">状态：<br />更新时间：2019-12-21 23:00:57</dd>
+                    </dl>
+                </div>
+            </div>
+            <div class="lasted-type fn-left"><a href="/index.php/vod/type/id/3.html"></a></div>
+            <div class="lasted-tags fn-left"><a href='/index.php/vod/list/area/%E4%B8%AD%E5%9B%BD%E5%A4%A7%E9%99%86/id/3.html' target='_blank'>中国大陆</a> </div>
+            <div class="lasted-time fn-right">2019-12-21</div>
+            </li>
+                        <li><div class="lasted-num fn-left">∷</div>
+            <div class="lasted-tit fn-left">
+                <h5 class="show-tipinfo"><a href="/index.php/vod/detail/id/5630.html">若能与你共乘海浪之上</a><em>/</em></h5>
+                <div class="tipInfo">
+                    <div class="play-img"><img src="https://cn2.3days.cc/1575885836102529.jpeg" alt="若能与你共乘海浪之上" /></div>
+                    <dl>
+                        <dt>若能与你共乘海浪之上</dt>
+                        <dd><label>主演：</label>片寄凉太,川荣李奈,松本穗香,伊藤健太郎</dd>
+                        <dd><label>剧情：</label>                                　　夏天、阳光，沙滩、海浪，青年消防员雏罂粟港和爱好冲浪的向水日菜子相遇并迅速展开热恋看似命中注定的这对恋人，却不幸遭遇生死别离。无法接…</dd>
+                        <dd class="bg">状态：<br />更新时间：2019-12-21 21:00:37</dd>
+                    </dl>
+                </div>
+            </div>
+            <div class="lasted-type fn-left"><a href="/index.php/vod/type/id/4.html"></a></div>
+            <div class="lasted-tags fn-left"><a href='/index.php/vod/list/area/%E6%97%A5%E6%9C%AC/id/4.html' target='_blank'>日本</a> </div>
+            <div class="lasted-time fn-right">2019-12-21</div>
+            </li>
+                        <li><div class="lasted-num fn-left">∷</div>
+            <div class="lasted-tit fn-left">
+                <h5 class="show-tipinfo"><a href="/index.php/vod/detail/id/5629.html">惹不起的殿下大人</a><em>/</em></h5>
+                <div class="tipInfo">
+                    <div class="play-img"><img src="https://cn2.3days.cc/1575721839387801.jpeg" alt="惹不起的殿下大人" /></div>
+                    <dl>
+                        <dt>惹不起的殿下大人</dt>
+                        <dd><label>主演：</label>唐晓天,黄日莹,吕昀峰,陈柏融,金璐莹,林枫松,曾可妮,潘蕾亦</dd>
+                        <dd><label>剧情：</label>                                　　涂思熠和林铮铮原本是青梅竹马的情侣，由于涂思熠出道成为偶像并且日渐走红，两人感情出现间隙 涂思熠代言古风游戏，却意外被困游戏中，成了…</dd>
+                        <dd class="bg">状态：<br />更新时间：2019-12-21 21:00:37</dd>
+                    </dl>
+                </div>
+            </div>
+            <div class="lasted-type fn-left"><a href="/index.php/vod/type/id/13.html"></a></div>
+            <div class="lasted-tags fn-left"><a href='/index.php/vod/list/area/%E4%B8%AD%E5%9B%BD%E5%A4%A7%E9%99%86/id/13.html' target='_blank'>中国大陆</a> </div>
+            <div class="lasted-time fn-right">2019-12-21</div>
+            </li>
+                        <li><div class="lasted-num fn-left">∷</div>
+            <div class="lasted-tit fn-left">
+                <h5 class="show-tipinfo"><a href="/index.php/vod/detail/id/5628.html">名侦探柯南</a><em>/</em></h5>
+                <div class="tipInfo">
+                    <div class="play-img"><img src="https://cn2.3days.cc/1556945629190246.jpeg" alt="名侦探柯南" /></div>
+                    <dl>
+                        <dt>名侦探柯南</dt>
+                        <dd><label>主演：</label>高山南,山崎和佳奈,神谷明,小山力也,林原惠美,山口胜平,田中秀幸,岛本须美,绪方贤一,堀川亮,松井菜樱子,宫村优子,岩居由希子,大谷育江,高木涉,高岛雅罗,堀之纪,立木文彦,小山茉美,三石琴乃,置鲇龙太郎,日高法子,池田秀一,古谷彻</dd>
+                        <dd><label>剧情：</label>工藤新一是全国著名的高中生侦探，在一次追查黑衣人犯罪团伙时不幸被团伙成员发现，击晕后喂了神奇的药水，工藤新一变回了小孩！新一找到了经常帮助他的阿笠博士，博士为他度身打造不少间谍武器为了防止犯罪团伙对他…</dd>
+                        <dd class="bg">状态：<br />更新时间：2019-12-21 21:00:37</dd>
+                    </dl>
+                </div>
+            </div>
+            <div class="lasted-type fn-left"><a href="/index.php/vod/type/id/4.html"></a></div>
+            <div class="lasted-tags fn-left"><a href='/index.php/vod/list/area/%E6%97%A5%E6%9C%AC/id/4.html' target='_blank'>日本</a> </div>
+            <div class="lasted-time fn-right">2019-12-21</div>
+            </li>
+                        <li><div class="lasted-num fn-left">∷</div>
+            <div class="lasted-tit fn-left">
+                <h5 class="show-tipinfo"><a href="/index.php/vod/detail/id/5627.html">西游番外篇之笨妖怪</a><em>/</em></h5>
+                <div class="tipInfo">
+                    <div class="play-img"><img src="https://cn2.3days.cc/1576765045583513.jpeg" alt="西游番外篇之笨妖怪" /></div>
+                    <dl>
+                        <dt>西游番外篇之笨妖怪</dt>
+                        <dd><label>主演：</label>杨丰宇,宁一洺,张建海,初俊辰,大宝,田然,钱怡,（香港）,杨翌</dd>
+                        <dd><label>剧情：</label>奔波霸和哥哥霸波奔给白龙马下毒失败后，被孙悟空打出原形，其实，实际兄弟俩被抖落在皇帝的大殿上时，偷偷使用障眼法逃了出来，偷出月光宝盒穿错了地方来到了现代
+                       …</dd>
+                        <dd class="bg">状态：<br />更新时间：2019-12-21 21:00:37</dd>
+                    </dl>
+                </div>
+            </div>
+            <div class="lasted-type fn-left"><a href="/index.php/vod/type/id/1.html"></a></div>
+            <div class="lasted-tags fn-left"><a href='/index.php/vod/list/area/%E4%B8%AD%E5%9B%BD%E5%A4%A7%E9%99%86/id/1.html' target='_blank'>中国大陆</a> </div>
+            <div class="lasted-time fn-right">2019-12-21</div>
+            </li>
+                        <li><div class="lasted-num fn-left">∷</div>
+            <div class="lasted-tit fn-left">
+                <h5 class="show-tipinfo"><a href="/index.php/vod/detail/id/5626.html">奇葩说第六季</a><em>/</em></h5>
+                <div class="tipInfo">
+                    <div class="play-img"><img src="https://cn2.3days.cc/1572598340397335.jpeg" alt="奇葩说第六季" /></div>
+                    <dl>
+                        <dt>奇葩说第六季</dt>
+                        <dd><label>主演：</label>马东,蔡康永,李诞,薛兆丰,罗振宇</dd>
+                        <dd><label>剧情：</label>由爱奇艺与米未联合出品的说话达人秀节目10月31日起，每周四、六晚8:00点在爱奇艺播出。新的一季全面升级为蔡康永、薛兆丰、罗振宇、李诞四位导师带队比拼的形式，本季节目集结了近60位来自各行各业善于表…</dd>
+                        <dd class="bg">状态：<br />更新时间：2019-12-21 21:00:37</dd>
+                    </dl>
+                </div>
+            </div>
+            <div class="lasted-type fn-left"><a href="/index.php/vod/type/id/3.html"></a></div>
+            <div class="lasted-tags fn-left"><a href='/index.php/vod/list/area/%E4%B8%AD%E5%9B%BD%E5%A4%A7%E9%99%86/id/3.html' target='_blank'>中国大陆</a> </div>
+            <div class="lasted-time fn-right">2019-12-21</div>
+            </li>
+                        <li><div class="lasted-num fn-left">∷</div>
+            <div class="lasted-tit fn-left">
+                <h5 class="show-tipinfo"><a href="/index.php/vod/detail/id/5625.html">首尔情人</a><em>/</em></h5>
+                <div class="tipInfo">
+                    <div class="play-img"><img src="https://cn2.3days.cc/1576768690230496.jpeg" alt="首尔情人" /></div>
+                    <dl>
+                        <dt>首尔情人</dt>
+                        <dd><label>主演：</label>朴安可,余光</dd>
+                        <dd><label>剧情：</label>陷入性丑闻的韩国女星朴安可被公司下了一个“休假通告”，独自一人前往母亲的故乡杭州度假疗伤，到了杭州以后遇到了失意的音乐才子却以滴滴司机为兼职生计的余光，安可一次又一次的偶遇余光，两人从杭城的自然美景游…</dd>
+                        <dd class="bg">状态：<br />更新时间：2019-12-21 21:00:37</dd>
+                    </dl>
+                </div>
+            </div>
+            <div class="lasted-type fn-left"><a href="/index.php/vod/type/id/1.html"></a></div>
+            <div class="lasted-tags fn-left"><a href='/index.php/vod/list/area/%E4%B8%AD%E5%9B%BD%E5%A4%A7%E9%99%86/id/1.html' target='_blank'>中国大陆</a> </div>
+            <div class="lasted-time fn-right">2019-12-21</div>
+            </li>
+                        <li><div class="lasted-num fn-left">∷</div>
+            <div class="lasted-tit fn-left">
+                <h5 class="show-tipinfo"><a href="/index.php/vod/detail/id/5624.html">黄飞鸿对黄飞鸿</a><em>/</em></h5>
+                <div class="tipInfo">
+                    <div class="play-img"><img src="https://cn2.3days.cc/1576930647753576.jpeg" alt="黄飞鸿对黄飞鸿" /></div>
+                    <dl>
+                        <dt>黄飞鸿对黄飞鸿</dt>
+                        <dd><label>主演：</label>,谭咏麟,郑裕玲,毛舜筠,吴孟达,曾志伟,梁荣忠,黄秋生,黄一山,黄一飞,袁祥仁,黄德斌,胡大为,黄飞</dd>
+                        <dd><label>剧情：</label>　一代宗师黄飞鸿（谭咏麟 饰）本想安安静静过日子，不料他的“佛山无影脚”名震佛山后，前来拜访的民众络绎不绝，令喜爱清净的飞鸿不堪烦扰这日，省城的谢老爷（黄秋生 饰）邀请飞鸿前来一起为灾民筹款。本来喜爱…</dd>
+                        <dd class="bg">状态：<br />更新时间：2019-12-21 21:00:37</dd>
+                    </dl>
+                </div>
+            </div>
+            <div class="lasted-type fn-left"><a href="/index.php/vod/type/id/1.html"></a></div>
+            <div class="lasted-tags fn-left"><a href='/index.php/vod/list/area/%E4%B8%AD%E5%9B%BD%E9%A6%99%E6%B8%AF/id/1.html' target='_blank'>中国香港</a> </div>
+            <div class="lasted-time fn-right">2019-12-21</div>
+            </li>
+                        <li><div class="lasted-num fn-left">∷</div>
+            <div class="lasted-tit fn-left">
+                <h5 class="show-tipinfo"><a href="/index.php/vod/detail/id/5623.html">锁龙谷</a><em>/</em></h5>
+                <div class="tipInfo">
+                    <div class="play-img"><img src="https://cn2.3days.cc/1576930394427809.jpeg" alt="锁龙谷" /></div>
+                    <dl>
+                        <dt>锁龙谷</dt>
+                        <dd><label>主演：</label>文东俊,李牧遥,苑琼丹,徐瑞阳</dd>
+                        <dd><label>剧情：</label>很久以前劫匪抢劫大量金银财宝在经过锁龙谷时，遭到莽人部落拦截，两边人马在锁龙谷杀得天昏地暗，但最终双方都没有走出锁龙谷，从此离奇失踪，所有宝物也不知去向，有说同归于尽覆没，有说在原始丛林中被野兽吃尽，…</dd>
+                        <dd class="bg">状态：<br />更新时间：2019-12-21 21:00:37</dd>
+                    </dl>
+                </div>
+            </div>
+            <div class="lasted-type fn-left"><a href="/index.php/vod/type/id/1.html"></a></div>
+            <div class="lasted-tags fn-left"><a href='/index.php/vod/list/area/%E4%B8%AD%E5%9B%BD%E5%A4%A7%E9%99%86/id/1.html' target='_blank'>中国大陆</a> </div>
+            <div class="lasted-time fn-right">2019-12-21</div>
+            </li>
+                        <li><div class="lasted-num fn-left">∷</div>
+            <div class="lasted-tit fn-left">
+                <h5 class="show-tipinfo"><a href="/index.php/vod/detail/id/5622.html">吐槽大会第四季</a><em>/</em></h5>
+                <div class="tipInfo">
+                    <div class="play-img"><img src="https://cn2.3days.cc/1575116840975926.jpeg" alt="吐槽大会第四季" /></div>
+                    <dl>
+                        <dt>吐槽大会第四季</dt>
+                        <dd><label>主演：</label>袁咏仪,吴昕,张绍刚,卡姆,庞博,董宝石,梁龙,李佳琦</dd>
+                        <dd><label>剧情：</label>                                　　《吐槽大会》第四季秉承着“吐槽，我们来真的”的宗旨，让观众在节目中看见真实、锐度和幽默的吐槽每期节目会请来一位自带热点话题的嘉宾，根…</dd>
+                        <dd class="bg">状态：<br />更新时间：2019-12-21 21:00:37</dd>
+                    </dl>
+                </div>
+            </div>
+            <div class="lasted-type fn-left"><a href="/index.php/vod/type/id/3.html"></a></div>
+            <div class="lasted-tags fn-left"><a href='/index.php/vod/list/area/%E4%B8%AD%E5%9B%BD%E5%A4%A7%E9%99%86/id/3.html' target='_blank'>中国大陆</a> </div>
+            <div class="lasted-time fn-right">2019-12-21</div>
+            </li>
+                        <li><div class="lasted-num fn-left">∷</div>
+            <div class="lasted-tit fn-left">
+                <h5 class="show-tipinfo"><a href="/index.php/vod/detail/id/5621.html">新难兄难弟之湘军进城</a><em>/</em></h5>
+                <div class="tipInfo">
+                    <div class="play-img"><img src="https://cn2.3days.cc/1576930010923491.jpeg" alt="新难兄难弟之湘军进城" /></div>
+                    <dl>
+                        <dt>新难兄难弟之湘军进城</dt>
+                        <dd><label>主演：</label>赵梁,王星雅,吕文胜,白晓朵</dd>
+                        <dd><label>剧情：</label>从小跟着爷爷习武的湘军，在爷爷死后开启了去城里打拼的生涯，期间遇到了被自己拯救了思想的两个骗子兄弟，兄弟三人多次遭人骗，边埋怨，边努力，边探索，湘军经历了一段坎坷的爱情经历和进退两难的兄弟情！…</dd>
+                        <dd class="bg">状态：<br />更新时间：2019-12-21 21:00:37</dd>
+                    </dl>
+                </div>
+            </div>
+            <div class="lasted-type fn-left"><a href="/index.php/vod/type/id/1.html"></a></div>
+            <div class="lasted-tags fn-left"><a href='/index.php/vod/list/area/%E4%B8%AD%E5%9B%BD%E5%A4%A7%E9%99%86/id/1.html' target='_blank'>中国大陆</a> </div>
+            <div class="lasted-time fn-right">2019-12-21</div>
+            </li>
+                        <li><div class="lasted-num fn-left">∷</div>
+            <div class="lasted-tit fn-left">
+                <h5 class="show-tipinfo"><a href="/index.php/vod/detail/id/5620.html">热爱</a><em>/</em></h5>
+                <div class="tipInfo">
+                    <div class="play-img"><img src="https://cn2.3days.cc/1575204113518915.jpeg" alt="热爱" /></div>
+                    <dl>
+                        <dt>热爱</dt>
+                        <dd><label>主演：</label>杨玏,啜妮,刘敏涛,范伟,黄圣依,</dd>
+                        <dd><label>剧情：</label>苏州青年尚晋大学哲学系毕业后，留在北京当了一名北漂北京姑娘李貌是尚晋的女朋友，他们两人是大学校友。李貌读的是室外环境设计专业，但当下做的工作是室内环境设计，她跟闺蜜毛毛开了一家“新围城”家居工作室。李…</dd>
+                        <dd class="bg">状态：<br />更新时间：2019-12-21 21:00:37</dd>
+                    </dl>
+                </div>
+            </div>
+            <div class="lasted-type fn-left"><a href="/index.php/vod/type/id/13.html"></a></div>
+            <div class="lasted-tags fn-left"><a href='/index.php/vod/list/area/%E4%B8%AD%E5%9B%BD%E5%A4%A7%E9%99%86/id/13.html' target='_blank'>中国大陆</a> </div>
+            <div class="lasted-time fn-right">2019-12-21</div>
+            </li>
+                        <li><div class="lasted-num fn-left">∷</div>
+            <div class="lasted-tit fn-left">
+                <h5 class="show-tipinfo"><a href="/index.php/vod/detail/id/5619.html">入间同学入魔了</a><em>/</em></h5>
+                <div class="tipInfo">
+                    <div class="play-img"><img src="https://cn2.3days.cc/1570328317229448.jpeg" alt="入间同学入魔了" /></div>
+                    <dl>
+                        <dt>入间同学入魔了</dt>
+                        <dd><label>主演：</label>村濑步,木村良平,朝井彩加,早见沙织,小野大辅,佐藤拓也,黑田崇矢,斋贺光希,东山奈央</dd>
+                        <dd><label>剧情：</label>欢迎光临快乐的魔界！无法拒绝别人请求的老好人少年铃木入间，意外地成为了魔界大恶魔沙利文的孙子！受到溺爱的入间，开始到沙利文担任理事长的恶魔学校去上学……入间希望能隐藏人类的身份度过和平的校园生活，但他…</dd>
+                        <dd class="bg">状态：<br />更新时间：2019-12-21 21:00:37</dd>
+                    </dl>
+                </div>
+            </div>
+            <div class="lasted-type fn-left"><a href="/index.php/vod/type/id/4.html"></a></div>
+            <div class="lasted-tags fn-left"><a href='/index.php/vod/list/area/%E6%97%A5%E6%9C%AC/id/4.html' target='_blank'>日本</a> </div>
+            <div class="lasted-time fn-right">2019-12-21</div>
+            </li>
+                        <li><div class="lasted-num fn-left">∷</div>
+            <div class="lasted-tit fn-left">
+                <h5 class="show-tipinfo"><a href="/index.php/vod/detail/id/5618.html">我的英雄学院第四季</a><em>/</em></h5>
+                <div class="tipInfo">
+                    <div class="play-img"><img src="https://cn2.3days.cc/1570935279615312.jpeg" alt="我的英雄学院第四季" /></div>
+                    <dl>
+                        <dt>我的英雄学院第四季</dt>
+                        <dd><label>主演：</label>山下大辉,三宅健太,冈本信彦,佐仓绫音,石川界人,梶裕贵,增田俊树,悠木碧,井上麻里奈,新垣樽助,上村祐翔,安野希世乃,三木真一郎,津田健次郎,小林星兰</dd>
+                        <dd><label>剧情：</label>这是一个人类理所当然拥有超能力“个性”的世界被称为「笨久」的“无个性”少年·绿谷出久与憧憬的No.1英雄欧尔麦特相遇，被其发现绿谷隐藏的英雄资质，从欧尔麦特手中继承了“个性” One For All。…</dd>
+                        <dd class="bg">状态：<br />更新时间：2019-12-21 21:00:37</dd>
+                    </dl>
+                </div>
+            </div>
+            <div class="lasted-type fn-left"><a href="/index.php/vod/type/id/4.html"></a></div>
+            <div class="lasted-tags fn-left"><a href='/index.php/vod/list/area/%E6%97%A5%E6%9C%AC/id/4.html' target='_blank'>日本</a> </div>
+            <div class="lasted-time fn-right">2019-12-21</div>
+            </li>
+                        <li><div class="lasted-num fn-left">∷</div>
+            <div class="lasted-tit fn-left">
+                <h5 class="show-tipinfo"><a href="/index.php/vod/detail/id/5617.html">欢乐送2019</a><em>/</em></h5>
+                <div class="tipInfo">
+                    <div class="play-img"><img src="https://cn2.3days.cc/1557388610251971.jpeg" alt="欢乐送2019" /></div>
+                    <dl>
+                        <dt>欢乐送2019</dt>
+                        <dd><label>主演：</label>未知</dd>
+                        <dd><label>剧情：</label>《欢乐送》栏目是以欢乐为主题的一档节目，包括东北二人转、小品、特色歌舞以及喜剧明星、风土人情等，把与观众短信点歌、聊天、串门、看戏等节目形式有机地与主持人灵活的脱口秀进行串联
+…</dd>
+                        <dd class="bg">状态：<br />更新时间：2019-12-21 21:00:37</dd>
+                    </dl>
+                </div>
+            </div>
+            <div class="lasted-type fn-left"><a href="/index.php/vod/type/id/3.html"></a></div>
+            <div class="lasted-tags fn-left"><a href='/index.php/vod/list/area/%E4%B8%AD%E5%9B%BD%E5%A4%A7%E9%99%86/id/3.html' target='_blank'>中国大陆</a> </div>
+            <div class="lasted-time fn-right">2019-12-21</div>
+            </li>
+                        <li><div class="lasted-num fn-left">∷</div>
+            <div class="lasted-tit fn-left">
+                <h5 class="show-tipinfo"><a href="/index.php/vod/detail/id/5482.html">梦回</a><em>/</em></h5>
+                <div class="tipInfo">
+                    <div class="play-img"><img src="https://cn2.3days.cc/1576324826319301.jpeg" alt="梦回" /></div>
+                    <dl>
+                        <dt>梦回</dt>
+                        <dd><label>主演：</label>李兰迪,王安宇,辛云来,孙安可,丁桥,陈语安,章乐韵,张彤,刘钧,倪菘阳,何志龙,郎鹏,金翀</dd>
+                        <dd><label>剧情：</label>                                　　一个生活在21世纪的女孩子，故宫里的一次迷路，竟穿越时空回到了清朝，并身不由己地进入危机四伏的皇宫内院热情如火的十三阿哥、深沉内敛的…</dd>
+                        <dd class="bg">状态：<br />更新时间：2019-12-21 21:00:37</dd>
+                    </dl>
+                </div>
+            </div>
+            <div class="lasted-type fn-left"><a href="/index.php/vod/type/id/13.html"></a></div>
+            <div class="lasted-tags fn-left"><a href='/index.php/vod/list/area/%E4%B8%AD%E5%9B%BD%E5%A4%A7%E9%99%86/id/13.html' target='_blank'>中国大陆</a> </div>
+            <div class="lasted-time fn-right">2019-12-21</div>
+            </li>
+                        <li><div class="lasted-num fn-left">∷</div>
+            <div class="lasted-tit fn-left">
+                <h5 class="show-tipinfo"><a href="/index.php/vod/detail/id/5478.html">剑王朝</a><em>/</em></h5>
+                <div class="tipInfo">
+                    <div class="play-img"><img src="https://cn2.3days.cc/1575632967745829.jpeg" alt="剑王朝" /></div>
+                    <dl>
+                        <dt>剑王朝</dt>
+                        <dd><label>主演：</label>李现,李一桐,刘奕君,姚笛,赵圆瑗,何润东,肖旭,李光复,张维娜</dd>
+                        <dd><label>剧情：</label>                                　　乱世之年，诸国百姓纷纷尚武而存风鸣梧桐落酒铺里身患顽疾的丁宁因半日通玄，十日破境等一系列天才举动，一时间成为江湖最炙手可热的存在，伪…</dd>
+                        <dd class="bg">状态：<br />更新时间：2019-12-21 20:00:33</dd>
+                    </dl>
+                </div>
+            </div>
+            <div class="lasted-type fn-left"><a href="/index.php/vod/type/id/13.html"></a></div>
+            <div class="lasted-tags fn-left"><a href='/index.php/vod/list/area/%E4%B8%AD%E5%9B%BD%E5%A4%A7%E9%99%86/id/13.html' target='_blank'>中国大陆</a> </div>
+            <div class="lasted-time fn-right">2019-12-21</div>
+            </li>
+                        <li><div class="lasted-num fn-left">∷</div>
+            <div class="lasted-tit fn-left">
+                <h5 class="show-tipinfo"><a href="/index.php/vod/detail/id/5616.html">真爱如血第七季</a><em>/</em></h5>
+                <div class="tipInfo">
+                    <div class="play-img"><img src="https://cn2.3days.cc/1576922067798694.jpeg" alt="真爱如血第七季" /></div>
+                    <dl>
+                        <dt>真爱如血第七季</dt>
+                        <dd><label>主演：</label>安娜·帕奎因,史蒂芬·莫耶,亚历山大·斯卡斯加德,山姆·特拉梅尔,瑞恩·柯万腾,尼尔森·埃利斯,乔·曼根尼罗,克里斯汀·鲍尔,黛博拉·安沃尔,卢蒂娜·卫</dd>
+                        <dd><label>剧情：</label>　　美国吸血鬼题材电视剧《真爱如血》前六季都取得非常不错的收视率，HBO电视台随即宣布将续订《真爱如血》第七季，《真爱如血》第七季准备在6月22日晚9：00开播，这也是该剧的告别季，共十集充满着剧集本…</dd>
+                        <dd class="bg">状态：<br />更新时间：2019-12-21 19:00:14</dd>
+                    </dl>
+                </div>
+            </div>
+            <div class="lasted-type fn-left"><a href="/index.php/vod/type/id/16.html"></a></div>
+            <div class="lasted-tags fn-left"><a href='/index.php/vod/list/area/%E7%BE%8E%E5%9B%BD/id/16.html' target='_blank'>美国</a> </div>
+            <div class="lasted-time fn-right">2019-12-21</div>
+            </li>
+                        <li><div class="lasted-num fn-left">∷</div>
+            <div class="lasted-tit fn-left">
+                <h5 class="show-tipinfo"><a href="/index.php/vod/detail/id/5615.html">真爱如血第一季</a><em>/</em></h5>
+                <div class="tipInfo">
+                    <div class="play-img"><img src="https://cn2.3days.cc/1576919169561270.jpeg" alt="真爱如血第一季" /></div>
+                    <dl>
+                        <dt>真爱如血第一季</dt>
+                        <dd><label>主演：</label>安娜·帕奎因,史蒂芬·莫耶,山姆·特拉梅尔,瑞恩·柯万腾,Rutina,Wesley,亚历山大·斯卡斯加德,克里斯汀·鲍尔,黛博拉·安沃尔</dd>
+                        <dd><label>剧情：</label>　根据畅销吸血鬼小说《南方吸血鬼》（Southern Vampire）改编
+　　人们害怕吸血鬼的时代已经过去，如今是变成吸血鬼害怕人类。在路易斯安纳州的小镇Bon Temps上，电视谈话节目日日讨论到…</dd>
+                        <dd class="bg">状态：<br />更新时间：2019-12-21 19:00:14</dd>
+                    </dl>
+                </div>
+            </div>
+            <div class="lasted-type fn-left"><a href="/index.php/vod/type/id/16.html"></a></div>
+            <div class="lasted-tags fn-left"><a href='/index.php/vod/list/area/%E7%BE%8E%E5%9B%BD/id/16.html' target='_blank'>美国</a> </div>
+            <div class="lasted-time fn-right">2019-12-21</div>
+            </li>
+                        <li><div class="lasted-num fn-left">∷</div>
+            <div class="lasted-tit fn-left">
+                <h5 class="show-tipinfo"><a href="/index.php/vod/detail/id/5614.html">真爱如血第二季</a><em>/</em></h5>
+                <div class="tipInfo">
+                    <div class="play-img"><img src="https://cn2.3days.cc/1576916188978122.jpeg" alt="真爱如血第二季" /></div>
+                    <dl>
+                        <dt>真爱如血第二季</dt>
+                        <dd><label>主演：</label>安娜·帕奎因,史蒂芬·莫耶,山姆·特拉梅尔,瑞恩·柯万腾,卢蒂娜·卫斯理</dd>
+                        <dd><label>剧情：</label>《真爱如血》（True Blood）改编自Charlaine Harris的小说《南方吸血鬼》（Southern Vampire）这部尺度大胆、引人恐惧的新剧由《六英尺下》（Six Feet Unde…</dd>
+                        <dd class="bg">状态：<br />更新时间：2019-12-21 19:00:14</dd>
+                    </dl>
+                </div>
+            </div>
+            <div class="lasted-type fn-left"><a href="/index.php/vod/type/id/16.html"></a></div>
+            <div class="lasted-tags fn-left"><a href='/index.php/vod/list/area/%E7%BE%8E%E5%9B%BD/id/16.html' target='_blank'>美国</a> </div>
+            <div class="lasted-time fn-right">2019-12-21</div>
+            </li>
+                        <li><div class="lasted-num fn-left">∷</div>
+            <div class="lasted-tit fn-left">
+                <h5 class="show-tipinfo"><a href="/index.php/vod/detail/id/5613.html">未来卡 搭档对战</a><em>/</em></h5>
+                <div class="tipInfo">
+                    <div class="play-img"><img src="https://cn2.3days.cc/1576924552744449.jpeg" alt="未来卡 搭档对战" /></div>
+                    <dl>
+                        <dt>未来卡 搭档对战</dt>
+                        <dd><label>主演：</label>苍井翔太,水野麻里绘,三瓶由布子,安元洋贵,大畑伸太郎,木内秀信,箭内仁,寺川爱美,七绪春日,最上嗣生</dd>
+                        <dd><label>剧情：</label>暂无内容…</dd>
+                        <dd class="bg">状态：<br />更新时间：2019-12-21 19:00:14</dd>
+                    </dl>
+                </div>
+            </div>
+            <div class="lasted-type fn-left"><a href="/index.php/vod/type/id/4.html"></a></div>
+            <div class="lasted-tags fn-left"><a href='/index.php/vod/list/area/%E6%97%A5%E6%9C%AC/id/4.html' target='_blank'>日本</a> </div>
+            <div class="lasted-time fn-right">2019-12-21</div>
+            </li>
+                        <li><div class="lasted-num fn-left">∷</div>
+            <div class="lasted-tit fn-left">
+                <h5 class="show-tipinfo"><a href="/index.php/vod/detail/id/5612.html">微笑Pasta台湾版</a><em>/</em></h5>
+                <div class="tipInfo">
+                    <div class="play-img"><img src="https://cn2.3days.cc/1576845395894555.jpeg" alt="微笑Pasta台湾版" /></div>
+                    <dl>
+                        <dt>微笑Pasta台湾版</dt>
+                        <dd><label>主演：</label>王心凌,张栋梁,赵小侨,蔡尚甫,赵舜,检场,王琄,吴震亚,狄志杰,颜嘉乐,赖薇如,沈孟生,鲍正芳,葛蕾</dd>
+                        <dd><label>剧情：</label>晓诗（王心凌 饰）是微笑Pasta意大利面馆的宝贝女儿，她喜欢学长阿哲（Gino 饰）不但不喜欢她，还对她下了“恋情永远不会满三个月”的魔咒阿哲的哥哥何群（张栋梁 饰）和他关系并不好，因为喜欢音乐投身…</dd>
+                        <dd class="bg">状态：<br />更新时间：2019-12-21 19:00:14</dd>
+                    </dl>
+                </div>
+            </div>
+            <div class="lasted-type fn-left"><a href="/index.php/vod/type/id/14.html"></a></div>
+            <div class="lasted-tags fn-left"><a href='/index.php/vod/list/area/%E4%B8%AD%E5%9B%BD%E5%8F%B0%E6%B9%BE/id/14.html' target='_blank'>中国台湾</a> </div>
+            <div class="lasted-time fn-right">2019-12-21</div>
+            </li>
+                        <li><div class="lasted-num fn-left">∷</div>
+            <div class="lasted-tit fn-left">
+                <h5 class="show-tipinfo"><a href="/index.php/vod/detail/id/5611.html">棺姬嘉依卡 第二季</a><em>/</em></h5>
+                <div class="tipInfo">
+                    <div class="play-img"><img src="https://cn2.3days.cc/1576779340549122.jpeg" alt="棺姬嘉依卡 第二季" /></div>
+                    <dl>
+                        <dt>棺姬嘉依卡 第二季</dt>
+                        <dd><label>主演：</label>安济知佳,间岛淳司,原优子,斋藤千和,细谷佳正</dd>
+                        <dd><label>剧情：</label>大陆历一六零四年，在菲尔毕斯特大陆实际已经延续了三世纪的战国时代以北方霸主贾兹帝国的崩坏迎来了终结投入的兵力包括正规的骑士及士兵，魔法师及乱破师，佣兵团在内实际六十二万，还包括航天要塞三座在内的大量魔…</dd>
+                        <dd class="bg">状态：<br />更新时间：2019-12-21 19:00:14</dd>
+                    </dl>
+                </div>
+            </div>
+            <div class="lasted-type fn-left"><a href="/index.php/vod/type/id/4.html"></a></div>
+            <div class="lasted-tags fn-left"><a href='/index.php/vod/list/area/%E6%97%A5%E6%9C%AC/id/4.html' target='_blank'>日本</a> </div>
+            <div class="lasted-time fn-right">2019-12-21</div>
+            </li>
+                        <li><div class="lasted-num fn-left">∷</div>
+            <div class="lasted-tit fn-left">
+                <h5 class="show-tipinfo"><a href="/index.php/vod/detail/id/5610.html">棺姬嘉依卡</a><em>/</em></h5>
+                <div class="tipInfo">
+                    <div class="play-img"><img src="https://cn2.3days.cc/1576781178184546.jpeg" alt="棺姬嘉依卡" /></div>
+                    <dl>
+                        <dt>棺姬嘉依卡</dt>
+                        <dd><label>主演：</label>安济知佳,间岛淳司,原优子,斋藤千和,细谷佳正,佐藤健辅,野水伊织,幸田梦波,森嵨秀太,山本和臣</dd>
+                        <dd><label>剧情：</label>故事发生在大陆历一六零四年，持续了三个世纪的漫长战争终于画上了终点，整片菲尔毕斯特大陆哀鸿遍野，满目疮痍托鲁（间岛淳司 配音）和阿卡丽（原优子 配音）虽然没有血缘关系，却结为了义兄妹，两人相互扶持经历…</dd>
+                        <dd class="bg">状态：<br />更新时间：2019-12-21 19:00:14</dd>
+                    </dl>
+                </div>
+            </div>
+            <div class="lasted-type fn-left"><a href="/index.php/vod/type/id/4.html"></a></div>
+            <div class="lasted-tags fn-left"><a href='/index.php/vod/list/area/%E6%97%A5%E6%9C%AC/id/4.html' target='_blank'>日本</a> </div>
+            <div class="lasted-time fn-right">2019-12-21</div>
+            </li>
+                        <li><div class="lasted-num fn-left">∷</div>
+            <div class="lasted-tit fn-left">
+                <h5 class="show-tipinfo"><a href="/index.php/vod/detail/id/5609.html">白箱</a><em>/</em></h5>
+                <div class="tipInfo">
+                    <div class="play-img"><img src="https://cn2.3days.cc/1576783352903616.jpeg" alt="白箱" /></div>
+                    <dl>
+                        <dt>白箱</dt>
+                        <dd><label>主演：</label>木村珠莉,佳村遥,千菅春香,高野麻美,大和田仁美,西地修哉,吉野裕行,山冈百合,松冈祯丞,松风雅也,茅野爱衣,中原麻衣,高木涉,桧山修之,斋藤宽仁,滨田</dd>
+                        <dd><label>剧情：</label>所谓的“白箱”，是指在动画放送之前，专门制作赠送给参与了动画制作的工作人员们的录像带，其本身拥有着令人感动的悠久历史，因为这些录像带通常都被装在白色的盒子里，所以被成为“白箱”
+           …</dd>
+                        <dd class="bg">状态：<br />更新时间：2019-12-21 19:00:12</dd>
+                    </dl>
+                </div>
+            </div>
+            <div class="lasted-type fn-left"><a href="/index.php/vod/type/id/4.html"></a></div>
+            <div class="lasted-tags fn-left"><a href='/index.php/vod/list/area/%E6%97%A5%E6%9C%AC/id/4.html' target='_blank'>日本</a> </div>
+            <div class="lasted-time fn-right">2019-12-21</div>
+            </li>
+                        <li><div class="lasted-num fn-left">∷</div>
+            <div class="lasted-tit fn-left">
+                <h5 class="show-tipinfo"><a href="/index.php/vod/detail/id/5608.html">笑对阴天</a><em>/</em></h5>
+                <div class="tipInfo">
+                    <div class="play-img"><img src="https://cn2.3days.cc/1576787945803692.jpeg" alt="笑对阴天" /></div>
+                    <dl>
+                        <dt>笑对阴天</dt>
+                        <dd><label>主演：</label>福士苍汰,中山优马,若山耀人,桐山涟,古川雄辉,大东骏介,小关裕太,东山纪之,市川知宏,加治将树</dd>
+                        <dd><label>剧情：</label>1878年（明治11年）在明治维新之后，为了处理日本国内的士族叛乱这类犯罪者，将他们大部分都送到了监狱里，但是逃狱事件时有发生。于是政府就在滋贺县的琵琶湖里浮着的巨树中建造了绝对不可能逃狱的监狱「狱门…</dd>
+                        <dd class="bg">状态：<br />更新时间：2019-12-21 19:00:12</dd>
+                    </dl>
+                </div>
+            </div>
+            <div class="lasted-type fn-left"><a href="/index.php/vod/type/id/4.html"></a></div>
+            <div class="lasted-tags fn-left"><a href='/index.php/vod/list/area/%E6%97%A5%E6%9C%AC/id/4.html' target='_blank'>日本</a> </div>
+            <div class="lasted-time fn-right">2019-12-21</div>
+            </li>
+                        <li><div class="lasted-num fn-left">∷</div>
+            <div class="lasted-tit fn-left">
+                <h5 class="show-tipinfo"><a href="/index.php/vod/detail/id/5607.html">千人斩</a><em>/</em></h5>
+                <div class="tipInfo">
+                    <div class="play-img"><img src="https://cn2.3days.cc/1576918698209097.jpeg" alt="千人斩" /></div>
+                    <dl>
+                        <dt>千人斩</dt>
+                        <dd><label>主演：</label>王祖贤,王羽,陈法蓉,钱小豪,孙亚东,王小凤,午马</dd>
+                        <dd><label>剧情：</label>刽子手袁德泰（王羽 饰）手段高强，金刀斩过，人犯尤不知死徒弟二五（钱小豪 饰）与公差等每每看得五体投地。是日，袁德泰斩杀悍匪“鬼八仙”团伙三名成员，几近完成千人斩记录。鬼八仙头目朱七被擒，依法亦当斩，…</dd>
+                        <dd class="bg">状态：<br />更新时间：2019-12-21 19:00:12</dd>
+                    </dl>
+                </div>
+            </div>
+            <div class="lasted-type fn-left"><a href="/index.php/vod/type/id/10.html"></a></div>
+            <div class="lasted-tags fn-left"><a href='/index.php/vod/list/area/%E4%B8%AD%E5%9B%BD%E5%8F%B0%E6%B9%BE+/id/10.html' target='_blank'>中国台湾 </a> </div>
+            <div class="lasted-time fn-right">2019-12-21</div>
+            </li>
+                        <li><div class="lasted-num fn-left">∷</div>
+            <div class="lasted-tit fn-left">
+                <h5 class="show-tipinfo"><a href="/index.php/vod/detail/id/5606.html">我们大家的河合庄</a><em>/</em></h5>
+                <div class="tipInfo">
+                    <div class="play-img"><img src="https://cn2.3days.cc/1576807679778850.jpeg" alt="我们大家的河合庄" /></div>
+                    <dl>
+                        <dt>我们大家的河合庄</dt>
+                        <dd><label>主演：</label>花泽香菜,井口祐一,佐藤利奈,四宫豪,金元寿子,小林沙苗</dd>
+                        <dd><label>剧情：</label>僕らはみんな河合荘 「シロさんと俺」…</dd>
+                        <dd class="bg">状态：<br />更新时间：2019-12-21 19:00:12</dd>
+                    </dl>
+                </div>
+            </div>
+            <div class="lasted-type fn-left"><a href="/index.php/vod/type/id/4.html"></a></div>
+            <div class="lasted-tags fn-left"><a href='/index.php/vod/list/area/%E6%97%A5%E6%9C%AC/id/4.html' target='_blank'>日本</a> </div>
+            <div class="lasted-time fn-right">2019-12-21</div>
+            </li>
+                        <li><div class="lasted-num fn-left">∷</div>
+            <div class="lasted-tit fn-left">
+                <h5 class="show-tipinfo"><a href="/index.php/vod/detail/id/5605.html">无处遁形</a><em>/</em></h5>
+                <div class="tipInfo">
+                    <div class="play-img"><img src="https://cn2.3days.cc/1576923067802336.jpeg" alt="无处遁形" /></div>
+                    <dl>
+                        <dt>无处遁形</dt>
+                        <dd><label>主演：</label>芦晓彤,羽妍</dd>
+                        <dd><label>剧情：</label> 一栋别墅司法拍卖，因为发生过凶案，价格便宜林强辉夫妇是一对白领，东拼西凑接手了这个廉价的别墅。搬入之后，妻子晓美发现屋子里的诸多蹊跷，于是给每个房间都装了监控。查看监控，晓美发现自己每晚都会梦游，随…</dd>
+                        <dd class="bg">状态：<br />更新时间：2019-12-21 19:00:12</dd>
+                    </dl>
+                </div>
+            </div>
+            <div class="lasted-type fn-left"><a href="/index.php/vod/type/id/11.html"></a></div>
+            <div class="lasted-tags fn-left"><a href='/index.php/vod/list/area/%E4%B8%AD%E5%9B%BD%E5%A4%A7%E9%99%86/id/11.html' target='_blank'>中国大陆</a> </div>
+            <div class="lasted-time fn-right">2019-12-21</div>
+            </li>
+                        <li><div class="lasted-num fn-left">∷</div>
+            <div class="lasted-tit fn-left">
+                <h5 class="show-tipinfo"><a href="/index.php/vod/detail/id/5604.html">激情时速</a><em>/</em></h5>
+                <div class="tipInfo">
+                    <div class="play-img"><img src="https://cn2.3days.cc/1576773207329120.jpeg" alt="激情时速" /></div>
+                    <dl>
+                        <dt>激情时速</dt>
+                        <dd><label>主演：</label>钟锐,王雅楠,张世玉</dd>
+                        <dd><label>剧情：</label>马赫是爱好改装及飙车的发烧友，一次与伙伴们非法赛车聚会之后为了救陷入牢狱的兄弟答应了与警察合作，以卧底身份潜入走私集团，在侦破的过程中与女警产生感情，最后将走私集团绳之以法并获得美人归情节设置精彩环环…</dd>
+                        <dd class="bg">状态：<br />更新时间：2019-12-21 19:00:12</dd>
+                    </dl>
+                </div>
+            </div>
+            <div class="lasted-type fn-left"><a href="/index.php/vod/type/id/11.html"></a></div>
+            <div class="lasted-tags fn-left"><a href='/index.php/vod/list/area/%E4%B8%AD%E5%9B%BD%E5%A4%A7%E9%99%86/id/11.html' target='_blank'>中国大陆</a> </div>
+            <div class="lasted-time fn-right">2019-12-21</div>
+            </li>
+                        <li><div class="lasted-num fn-left">∷</div>
+            <div class="lasted-tit fn-left">
+                <h5 class="show-tipinfo"><a href="/index.php/vod/detail/id/5603.html">猎金骑士之疯狂野蛮人</a><em>/</em></h5>
+                <div class="tipInfo">
+                    <div class="play-img"><img src="https://cn2.3days.cc/1576773705453962.jpeg" alt="猎金骑士之疯狂野蛮人" /></div>
+                    <dl>
+                        <dt>猎金骑士之疯狂野蛮人</dt>
+                        <dd><label>主演：</label>党辉,徐伟帆,张博楠,龙一一,蒋列</dd>
+                        <dd><label>剧情：</label>猎金骑士是由全球顶级大学挑选出来的天才华人学生组成的一个精英组织组织从成立之初的首要目标便是对抗全球的不良金融势力。猎金骑士的领导者黄立丕（老丕），被威胁接了一次任务。老丕立刻召集散落在上海的另外4位…</dd>
+                        <dd class="bg">状态：<br />更新时间：2019-12-21 19:00:12</dd>
+                    </dl>
+                </div>
+            </div>
+            <div class="lasted-type fn-left"><a href="/index.php/vod/type/id/11.html"></a></div>
+            <div class="lasted-tags fn-left"><a href='/index.php/vod/list/area/%E4%B8%AD%E5%9B%BD%E5%A4%A7%E9%99%86/id/11.html' target='_blank'>中国大陆</a> </div>
+            <div class="lasted-time fn-right">2019-12-21</div>
+            </li>
+                        <li><div class="lasted-num fn-left">∷</div>
+            <div class="lasted-tit fn-left">
+                <h5 class="show-tipinfo"><a href="/index.php/vod/detail/id/5602.html">花开荼蘼</a><em>/</em></h5>
+                <div class="tipInfo">
+                    <div class="play-img"><img src="https://cn2.3days.cc/1576922025444589.jpeg" alt="花开荼蘼" /></div>
+                    <dl>
+                        <dt>花开荼蘼</dt>
+                        <dd><label>主演：</label>姜姿姿,王腾飞</dd>
+                        <dd><label>剧情：</label>一个天真善良、叛逆倔强的女孩刘依依，在外打工感情受挫，回到家里想过安稳的日子懵懂的少女通过媒人介绍嫁给了一个常年在外的男人。两人长期分居，没能如期给婆家延续香火，刘依依被逼着外出跟丈夫一起工作，拒绝后…</dd>
+                        <dd class="bg">状态：<br />更新时间：2019-12-21 18:01:00</dd>
+                    </dl>
+                </div>
+            </div>
+            <div class="lasted-type fn-left"><a href="/index.php/vod/type/id/11.html"></a></div>
+            <div class="lasted-tags fn-left"><a href='/index.php/vod/list/area/%E4%B8%AD%E5%9B%BD%E5%A4%A7%E9%99%86/id/11.html' target='_blank'>中国大陆</a> </div>
+            <div class="lasted-time fn-right">2019-12-21</div>
+            </li>
+                        <li><div class="lasted-num fn-left">∷</div>
+            <div class="lasted-tit fn-left">
+                <h5 class="show-tipinfo"><a href="/index.php/vod/detail/id/5601.html">魔鬼女大兵</a><em>/</em></h5>
+                <div class="tipInfo">
+                    <div class="play-img"><img src="https://cn2.3days.cc/1576777728796645.jpeg" alt="魔鬼女大兵" /></div>
+                    <dl>
+                        <dt>魔鬼女大兵</dt>
+                        <dd><label>主演：</label>黛米·摩尔,维果·莫腾森,安妮·班克罗夫特,杰森·贝盖</dd>
+                        <dd><label>剧情：</label>作为一枚政治筹码，海军情报官欧尼尔（黛咪·摩尔 Demi Moore 饰）成为了美国历史上第一个参加特种部队“海豹突击队”训练的女性军官凭借此事，一直呼吁男女平等的参议员狄海雯（安妮·班克罗夫特 An…</dd>
+                        <dd class="bg">状态：<br />更新时间：2019-12-21 18:01:00</dd>
+                    </dl>
+                </div>
+            </div>
+            <div class="lasted-type fn-left"><a href="/index.php/vod/type/id/1.html"></a></div>
+            <div class="lasted-tags fn-left"><a href='/index.php/vod/list/area/%E7%BE%8E%E5%9B%BD/id/1.html' target='_blank'>美国</a> </div>
+            <div class="lasted-time fn-right">2019-12-21</div>
+            </li>
+                        <li><div class="lasted-num fn-left">∷</div>
+            <div class="lasted-tit fn-left">
+                <h5 class="show-tipinfo"><a href="/index.php/vod/detail/id/5600.html">贼巢</a><em>/</em></h5>
+                <div class="tipInfo">
+                    <div class="play-img"><img src="https://cn2.3days.cc/1576837630219449.jpeg" alt="贼巢" /></div>
+                    <dl>
+                        <dt>贼巢</dt>
+                        <dd><label>主演：</label>杰拉德·巴特勒,巴勃罗·施瑞博尔,小奥谢拉·杰克逊,50分,梅多·威廉姆斯,莫里斯·孔特,布莱恩·范·霍尔特,伊万·琼斯,莫·麦克雷,凯维·莱曼-默塞尤,道</dd>
+                        <dd><label>剧情：</label>从未被劫的银行，三千万无记认钞票，引爆连环盗计一群以梅雷亚（巴勃罗·施瑞博尔 饰）为首的高智罪犯，手法高超、火力强横、而且沉迷打劫；纵使犯案累累，却甚少破绽，令警方束手无策。一次押款车劫案后，他们的党…</dd>
+                        <dd class="bg">状态：<br />更新时间：2019-12-21 18:01:00</dd>
+                    </dl>
+                </div>
+            </div>
+            <div class="lasted-type fn-left"><a href="/index.php/vod/type/id/1.html"></a></div>
+            <div class="lasted-tags fn-left"><a href='/index.php/vod/list/area/%E7%BE%8E%E5%9B%BD/id/1.html' target='_blank'>美国</a> </div>
+            <div class="lasted-time fn-right">2019-12-21</div>
+            </li>
+                        <li><div class="lasted-num fn-left">∷</div>
+            <div class="lasted-tit fn-left">
+                <h5 class="show-tipinfo"><a href="/index.php/vod/detail/id/5599.html">海角上的兄妹</a><em>/</em></h5>
+                <div class="tipInfo">
+                    <div class="play-img"><img src="https://cn2.3days.cc/1576918563247588.jpeg" alt="海角上的兄妹" /></div>
+                    <dl>
+                        <dt>海角上的兄妹</dt>
+                        <dd><label>主演：</label>松浦祐也,和田光沙,北山雅康,岩谷健司,中村祐太郎</dd>
+                        <dd><label>剧情：</label>患有自闭症的妹妹真理子又不见了，这次到了晚上还没回家，哥哥良夫四处寻找
+                                    
+                           …</dd>
+                        <dd class="bg">状态：<br />更新时间：2019-12-21 18:01:00</dd>
+                    </dl>
+                </div>
+            </div>
+            <div class="lasted-type fn-left"><a href="/index.php/vod/type/id/11.html"></a></div>
+            <div class="lasted-tags fn-left"><a href='/index.php/vod/list/area/%E6%97%A5%E6%9C%AC/id/11.html' target='_blank'>日本</a> </div>
+            <div class="lasted-time fn-right">2019-12-21</div>
+            </li>
+                        <li><div class="lasted-num fn-left">∷</div>
+            <div class="lasted-tit fn-left">
+                <h5 class="show-tipinfo"><a href="/index.php/vod/detail/id/5598.html">原钻2019</a><em>/</em></h5>
+                <div class="tipInfo">
+                    <div class="play-img"><img src="https://cn2.3days.cc/1576919211348811.jpeg" alt="原钻2019" /></div>
+                    <dl>
+                        <dt>原钻2019</dt>
+                        <dd><label>主演：</label>亚当·桑德勒,茱莉娅·福克斯,凯文·加内特,威肯,伊迪娜·门泽尔,勒凯斯·斯坦菲尔德,埃里克·博高森,贾德·赫希,布莱斯·科里根,罗比·德拉费勒,安赫·</dd>
+                        <dd><label>剧情：</label>萨弗迪兄弟和老搭档罗纳德·布隆斯坦编写剧本，设定在纽约的钻石区，桑德勒饰演一名沉迷于赌博的珠宝店老板，他在两段关系中挣扎，债务不断攀升门泽尔饰演桑德勒的妻子。…</dd>
+                        <dd class="bg">状态：<br />更新时间：2019-12-21 18:01:00</dd>
+                    </dl>
+                </div>
+            </div>
+            <div class="lasted-type fn-left"><a href="/index.php/vod/type/id/11.html"></a></div>
+            <div class="lasted-tags fn-left"><a href='/index.php/vod/list/area/%E7%BE%8E%E5%9B%BD/id/11.html' target='_blank'>美国</a> </div>
+            <div class="lasted-time fn-right">2019-12-21</div>
+            </li>
+                        <li><div class="lasted-num fn-left">∷</div>
+            <div class="lasted-tit fn-left">
+                <h5 class="show-tipinfo"><a href="/index.php/vod/detail/id/5597.html">功夫小妹嫁人记</a><em>/</em></h5>
+                <div class="tipInfo">
+                    <div class="play-img"><img src="https://cn2.3days.cc/1576769165111891.jpeg" alt="功夫小妹嫁人记" /></div>
+                    <dl>
+                        <dt>功夫小妹嫁人记</dt>
+                        <dd><label>主演：</label>王艺嘉,陈烨,张举举</dd>
+                        <dd><label>剧情：</label>跆拳道高手王小妹，三十了依然没有男朋友，一天去一个咖啡馆碰到小偷，抓小偷追逐中，不小心把咖啡撒在李氏集团公子李凯的（假李凯）身上，相识司机邱波（真李凯）李氏集团的赵志一直对董事长的位置虎视眈眈，所以赵…</dd>
+                        <dd class="bg">状态：<br />更新时间：2019-12-21 18:01:00</dd>
+                    </dl>
+                </div>
+            </div>
+            <div class="lasted-type fn-left"><a href="/index.php/vod/type/id/1.html"></a></div>
+            <div class="lasted-tags fn-left"><a href='/index.php/vod/list/area/%E4%B8%AD%E5%9B%BD%E5%A4%A7%E9%99%86/id/1.html' target='_blank'>中国大陆</a> </div>
+            <div class="lasted-time fn-right">2019-12-21</div>
+            </li>
+                        <li><div class="lasted-num fn-left">∷</div>
+            <div class="lasted-tit fn-left">
+                <h5 class="show-tipinfo"><a href="/index.php/vod/detail/id/5596.html">月亮的后裔</a><em>/</em></h5>
+                <div class="tipInfo">
+                    <div class="play-img"><img src="https://cn2.3days.cc/1576919394146394.jpeg" alt="月亮的后裔" /></div>
+                    <dl>
+                        <dt>月亮的后裔</dt>
+                        <dd><label>主演：</label>,王予诺,高翔宇,林乐乐</dd>
+                        <dd><label>剧情：</label>　本季故事主要讲述了吴刚因修仙出错，被师傅处罚在广寒宫前砍伐破而重生的桂树偌大的广寒宫，只有吴刚砍树的声音与嫦娥和玉兔相伴。三千年日月交替，吴刚与嫦娥互生情愫，两人本只愿这样在月宫平淡共度，不曾想，他…</dd>
+                        <dd class="bg">状态：<br />更新时间：2019-12-21 18:01:00</dd>
+                    </dl>
+                </div>
+            </div>
+            <div class="lasted-type fn-left"><a href="/index.php/vod/type/id/1.html"></a></div>
+            <div class="lasted-tags fn-left"><a href='/index.php/vod/list/area/%E4%B8%AD%E5%9B%BD%E5%A4%A7%E9%99%86/id/1.html' target='_blank'>中国大陆</a> </div>
+            <div class="lasted-time fn-right">2019-12-21</div>
+            </li>
+                        <li><div class="lasted-num fn-left">∷</div>
+            <div class="lasted-tit fn-left">
+                <h5 class="show-tipinfo"><a href="/index.php/vod/detail/id/5595.html">星球大战9：天行者崛起</a><em>/</em></h5>
+                <div class="tipInfo">
+                    <div class="play-img"><img src="https://cn2.3days.cc/1576916759885830.jpeg" alt="星球大战9：天行者崛起" /></div>
+                    <dl>
+                        <dt>星球大战9：天行者崛起</dt>
+                        <dd><label>主演：</label>黛西·雷德利,亚当·德赖弗,奥斯卡·伊萨克,约翰·博耶加,马克·哈米尔,凯丽·费雪,比利·迪·威廉姆斯,伊恩·麦克迪阿梅德,凯丽·拉塞尔,哈里森·福特,朱</dd>
+                        <dd><label>剧情：</label>本片为2017年电影《星球大战：最后的绝地武士》的续集，“星球大战后传三部曲”的第三部作品，同时是“天行者传奇”的第九部作品以及最终章在卢克·天行者化为绝地英灵的一年后，残存的抵抗势力将再次面对第一秩…</dd>
+                        <dd class="bg">状态：<br />更新时间：2019-12-21 17:00:18</dd>
+                    </dl>
+                </div>
+            </div>
+            <div class="lasted-type fn-left"><a href="/index.php/vod/type/id/9.html"></a></div>
+            <div class="lasted-tags fn-left"><a href='/index.php/vod/list/area/%E7%BE%8E%E5%9B%BD/id/9.html' target='_blank'>美国</a> </div>
+            <div class="lasted-time fn-right">2019-12-21</div>
+            </li>
+                        <li><div class="lasted-num fn-left">∷</div>
+            <div class="lasted-tit fn-left">
+                <h5 class="show-tipinfo"><a href="/index.php/vod/detail/id/5594.html">邻座的怪同学</a><em>/</em></h5>
+                <div class="tipInfo">
+                    <div class="play-img"><img src="https://cn2.3days.cc/1576913349387531.jpeg" alt="邻座的怪同学" /></div>
+                    <dl>
+                        <dt>邻座的怪同学</dt>
+                        <dd><label>主演：</label>菅田将晖,土屋太凤,古川雄辉,山田裕贵,池田依来沙,滨边美波,佐野岳,佐野史郎,速水直道</dd>
+                        <dd><label>剧情：</label>　学习成绩优异的水谷雫（土屋太凤 饰）性格冷淡，不愿与周围的人打交道这一天，她被老师委派去给一位许久不曾来校的男生送作业。那个男生名叫吉田春（菅田将晖 饰），开学第一天就因为打架斗殴而被停课，但是处分…</dd>
+                        <dd class="bg">状态：<br />更新时间：2019-12-21 16:00:48</dd>
+                    </dl>
+                </div>
+            </div>
+            <div class="lasted-type fn-left"><a href="/index.php/vod/type/id/1.html"></a></div>
+            <div class="lasted-tags fn-left"><a href='/index.php/vod/list/area/%E6%97%A5%E6%9C%AC/id/1.html' target='_blank'>日本</a> </div>
+            <div class="lasted-time fn-right">2019-12-21</div>
+            </li>
+                        <li><div class="lasted-num fn-left">∷</div>
+            <div class="lasted-tit fn-left">
+                <h5 class="show-tipinfo"><a href="/index.php/vod/detail/id/5539.html">今日说法</a><em>/</em></h5>
+                <div class="tipInfo">
+                    <div class="play-img"><img src="https://cn2.3days.cc/1562757696147147.jpeg" alt="今日说法" /></div>
+                    <dl>
+                        <dt>今日说法</dt>
+                        <dd><label>主演：</label>撒贝宁,路一鸣,刘元元,李晓东,张绍刚</dd>
+                        <dd><label>剧情：</label>《今日说法》诞生于1999年1月2日，是中国中央电视台(cctv)第一档全日播法制栏目，已经成为家喻户晓的品牌栏目栏目秉持“点滴记录中国法治进程”的理念，以“重在普法，监督执法，促进立法、服务百姓”为…</dd>
+                        <dd class="bg">状态：<br />更新时间：2019-12-21 16:00:48</dd>
+                    </dl>
+                </div>
+            </div>
+            <div class="lasted-type fn-left"><a href="/index.php/vod/type/id/3.html"></a></div>
+            <div class="lasted-tags fn-left"><a href='/index.php/vod/list/area/%E4%B8%AD%E5%9B%BD%E5%A4%A7%E9%99%86/id/3.html' target='_blank'>中国大陆</a> </div>
+            <div class="lasted-time fn-right">2019-12-21</div>
+            </li>
+                        <li><div class="lasted-num fn-left">∷</div>
+            <div class="lasted-tit fn-left">
+                <h5 class="show-tipinfo"><a href="/index.php/vod/detail/id/5593.html">少年乔乔的异想世界</a><em>/</em></h5>
+                <div class="tipInfo">
+                    <div class="play-img"><img src="https://cn2.3days.cc/1576913431100419.jpeg" alt="少年乔乔的异想世界" /></div>
+                    <dl>
+                        <dt>少年乔乔的异想世界</dt>
+                        <dd><label>主演：</label>罗曼·格里芬·戴维斯,托马辛·麦肯齐,斯嘉丽·约翰逊,塔伊加·维迪提,山姆·洛克威尔,蕾蓓尔·威尔森,阿尔菲·艾伦,斯戴芬·莫昌特,布莱恩·卡斯佩,加布</dd>
+                        <dd><label>剧情：</label>二战时期，男孩乔乔(戴维斯)和母亲(斯嘉丽)生活在纳粹德国统治下，他不知道母亲在家中藏着一个犹太女孩(麦肯齐)，而母亲秘密为抵抗军工作乔乔渴望加入希特勒青年团，他脑内出了一个颠覆版的希特勒，这个希特勒…</dd>
+                        <dd class="bg">状态：<br />更新时间：2019-12-21 16:00:45</dd>
+                    </dl>
+                </div>
+            </div>
+            <div class="lasted-type fn-left"><a href="/index.php/vod/type/id/12.html"></a></div>
+            <div class="lasted-tags fn-left"><a href='/index.php/vod/list/area/%E5%BE%B7%E5%9B%BD/id/12.html' target='_blank'>德国</a> </div>
+            <div class="lasted-time fn-right">2019-12-21</div>
+            </li>
+                        <li><div class="lasted-num fn-left">∷</div>
+            <div class="lasted-tit fn-left">
+                <h5 class="show-tipinfo"><a href="/index.php/vod/detail/id/5592.html">火星异种：复仇</a><em>/</em></h5>
+                <div class="tipInfo">
+                    <div class="play-img"><img src="https://cn2.3days.cc/1576913213743768.jpeg" alt="火星异种：复仇" /></div>
+                    <dl>
+                        <dt>火星异种：复仇</dt>
+                        <dd><label>主演：</label>伊藤英明,武井咲,山下智久,山木内秀信,细谷佳正,伊藤静,石川界人,小野大辅,高桥智秋,大桥贤一郎,丰崎爱生,立花慎之介,石冢运升,赤羽根健治,奈良彻,小村哲生,高桥英则,石田彰,小野友树,大原沙耶香,藤原贵弘田孝之,小栗旬,小杉健,菊地凛子,加藤雅也,小池荣子,篠田麻里子,泷藤贤一,太田莉菜,福岛莉拉</dd>
+                        <dd><label>剧情：</label>　火星黑叔叔回来了！曾于2014年9月播出的漫画改编热血动画《火星异种》，其续篇《火星异种 复仇》在今年四月新装上阵也许因为一期动画的改编不尽人意，二期的监督、人设、音乐等STAFF阵容都发生了改变。…</dd>
+                        <dd class="bg">状态：<br />更新时间：2019-12-21 16:00:45</dd>
+                    </dl>
+                </div>
+            </div>
+            <div class="lasted-type fn-left"><a href="/index.php/vod/type/id/4.html"></a></div>
+            <div class="lasted-tags fn-left"><a href='/index.php/vod/list/area/%E6%97%A5%E6%9C%AC/id/4.html' target='_blank'>日本</a> </div>
+            <div class="lasted-time fn-right">2019-12-21</div>
+            </li>
+                        <li><div class="lasted-num fn-left">∷</div>
+            <div class="lasted-tit fn-left">
+                <h5 class="show-tipinfo"><a href="/index.php/vod/detail/id/5591.html">结城友奈是勇者第二季</a><em>/</em></h5>
+                <div class="tipInfo">
+                    <div class="play-img"><img src="https://cn2.3days.cc/1576792360245083.jpeg" alt="结城友奈是勇者第二季" /></div>
+                    <dl>
+                        <dt>结城友奈是勇者第二季</dt>
+                        <dd><label>主演：</label>三森铃子,花泽香菜,花守由美里,照井春佳,内山夕实,黑泽朋世,长妻树里</dd>
+                        <dd><label>剧情：</label>故事发生在神世纪300年，主要讲述结城友奈是初中2年级学生，她天天在学校里过着与很多朋友一同听课、进行社团活动、玩耍的平稳生活不管怎么看这都是非常普通的女孩的生活日程，但是只有一点与其他孩子决定性不同…</dd>
+                        <dd class="bg">状态：<br />更新时间：2019-12-21 16:00:45</dd>
+                    </dl>
+                </div>
+            </div>
+            <div class="lasted-type fn-left"><a href="/index.php/vod/type/id/4.html"></a></div>
+            <div class="lasted-tags fn-left"><a href='/index.php/vod/list/area/%E6%97%A5%E6%9C%AC/id/4.html' target='_blank'>日本</a> </div>
+            <div class="lasted-time fn-right">2019-12-21</div>
+            </li>
+                        <li><div class="lasted-num fn-left">∷</div>
+            <div class="lasted-tit fn-left">
+                <h5 class="show-tipinfo"><a href="/index.php/vod/detail/id/5590.html">结城友奈是勇者 -鹫尾须美之章</a><em>/</em></h5>
+                <div class="tipInfo">
+                    <div class="play-img"><img src="https://cn2.3days.cc/1576794658420411.jpeg" alt="结城友奈是勇者 -鹫尾须美之章" /></div>
+                    <dl>
+                        <dt>结城友奈是勇者 -鹫尾须美之章</dt>
+                        <dd><label>主演：</label>三森すずこ,花澤香菜,花守ゆみり</dd>
+                        <dd><label>剧情：</label>劇場版「鷲尾須美の章」は、小説「鷲尾須美は勇者である」がベースで、結城友奈の先代の勇者の活躍が描かれる…</dd>
+                        <dd class="bg">状态：<br />更新时间：2019-12-21 16:00:45</dd>
+                    </dl>
+                </div>
+            </div>
+            <div class="lasted-type fn-left"><a href="/index.php/vod/type/id/4.html"></a></div>
+            <div class="lasted-tags fn-left"><a href='/index.php/vod/list/area/%E6%97%A5%E6%9C%AC/id/4.html' target='_blank'>日本</a> </div>
+            <div class="lasted-time fn-right">2019-12-21</div>
+            </li>
+                        <li><div class="lasted-num fn-left">∷</div>
+            <div class="lasted-tit fn-left">
+                <h5 class="show-tipinfo"><a href="/index.php/vod/detail/id/5589.html">叶问4：完结篇</a><em>/</em></h5>
+                <div class="tipInfo">
+                    <div class="play-img"><img src="https://cn2.3days.cc/1576911081110887.jpeg" alt="叶问4：完结篇" /></div>
+                    <dl>
+                        <dt>叶问4：完结篇</dt>
+                        <dd><label>主演：</label>甄子丹,吴樾,吴建豪,斯科特·阿金斯,李宛妲,郑则仕,陈国坤,敖嘉年,高战,熊黛林,吴千语</dd>
+                        <dd><label>剧情：</label>　　因故来到美国唐人街的叶问，意外卷入一场当地军方势力与华人武馆的纠纷，面对日益猖狂的民族歧视与压迫，叶问挺身而出，在美国海军陆战队军营拼死一战，以正宗咏春，向世界证明了中国功夫…</dd>
+                        <dd class="bg">状态：<br />更新时间：2019-12-21 15:00:27</dd>
+                    </dl>
+                </div>
+            </div>
+            <div class="lasted-type fn-left"><a href="/index.php/vod/type/id/1.html"></a></div>
+            <div class="lasted-tags fn-left"><a href='/index.php/vod/list/area/%E4%B8%AD%E5%9B%BD%E9%A6%99%E6%B8%AF/id/1.html' target='_blank'>中国香港</a> </div>
+            <div class="lasted-time fn-right">2019-12-21</div>
+            </li>
+                        <li><div class="lasted-num fn-left">∷</div>
+            <div class="lasted-tit fn-left">
+                <h5 class="show-tipinfo"><a href="/index.php/vod/detail/id/5588.html">终极三国2017</a><em>/</em></h5>
+                <div class="tipInfo">
+                    <div class="play-img"><img src="https://cn2.3days.cc/1576892714622623.jpeg" alt="终极三国2017" /></div>
+                    <dl>
+                        <dt>终极三国2017</dt>
+                        <dd><label>主演：</label>林子闳,黄伟晋,马振桓,易柏辰,金中西</dd>
+                        <dd><label>剧情：</label>雷婷、辜战﹑止戈、执四人在往往银时空看望孙尚喷鼻(小慈)的途中产生了时震而止戈震回到了金时空的三国期间，不测的是止戈竟然把途经的刘备砸晕了。更惊奇的是止戈竟然发觉刘备和本身长的如出一辙，止戈怕粉碎时空…</dd>
+                        <dd class="bg">状态：<br />更新时间：2019-12-21 15:00:26</dd>
+                    </dl>
+                </div>
+            </div>
+            <div class="lasted-type fn-left"><a href="/index.php/vod/type/id/14.html"></a></div>
+            <div class="lasted-tags fn-left"><a href='/index.php/vod/list/area/%E4%B8%AD%E5%9B%BD%E5%8F%B0%E6%B9%BE/id/14.html' target='_blank'>中国台湾</a> </div>
+            <div class="lasted-time fn-right">2019-12-21</div>
+            </li>
+                        <li><div class="lasted-num fn-left">∷</div>
+            <div class="lasted-tit fn-left">
+                <h5 class="show-tipinfo"><a href="/index.php/vod/detail/id/5587.html">爸爸去哪儿第六季</a><em>/</em></h5>
+                <div class="tipInfo">
+                    <div class="play-img"><img src="https://cn2.3days.cc/1576908119660811.jpeg" alt="爸爸去哪儿第六季" /></div>
+                    <dl>
+                        <dt>爸爸去哪儿第六季</dt>
+                        <dd><label>主演：</label>陈小春,包贝尔,杨烁,耿乐,何猷君</dd>
+                        <dd><label>剧情：</label>▪️《爸爸去哪儿》第六季，7月份上线拟邀爸爸：吴京、岳云鹏、包贝尔、乔振宇、陈建州，实习爸爸：宋威龙、胡一天。…</dd>
+                        <dd class="bg">状态：<br />更新时间：2019-12-21 15:00:26</dd>
+                    </dl>
+                </div>
+            </div>
+            <div class="lasted-type fn-left"><a href="/index.php/vod/type/id/3.html"></a></div>
+            <div class="lasted-tags fn-left"><a href='/index.php/vod/list/area/%E4%B8%AD%E5%9B%BD%E5%A4%A7%E9%99%86/id/3.html' target='_blank'>中国大陆</a> </div>
+            <div class="lasted-time fn-right">2019-12-21</div>
+            </li>
+                        <li><div class="lasted-num fn-left">∷</div>
+            <div class="lasted-tit fn-left">
+                <h5 class="show-tipinfo"><a href="/index.php/vod/detail/id/5586.html">真相大白第一季</a><em>/</em></h5>
+                <div class="tipInfo">
+                    <div class="play-img"><img src="https://cn2.3days.cc/1575641792789696.jpeg" alt="真相大白第一季" /></div>
+                    <dl>
+                        <dt>真相大白第一季</dt>
+                        <dd><label>主演：</label>奥克塔维亚·斯宾瑟,亚伦·保尔,丽兹·卡潘,迈克尔·比奇,罗恩·彼得·琼斯,伊丽莎白·帕金斯,梅奇·费法,翠茜·索姆斯,凯瑟琳·拉·纳莎</dd>
+                        <dd><label>剧情：</label>瑞茜·威瑟斯彭、苹果再度宣布打造新剧《你睡着了吗》(Are You Sleeping，暂译)，主演奥克塔维亚·斯宾瑟该剧改编自凯瑟琳·巴伯的同名犯罪题材小说，故事讲述女主角乔西因父亲犯有谋杀罪而远走他…</dd>
+                        <dd class="bg">状态：<br />更新时间：2019-12-21 15:00:26</dd>
+                    </dl>
+                </div>
+            </div>
+            <div class="lasted-type fn-left"><a href="/index.php/vod/type/id/16.html"></a></div>
+            <div class="lasted-tags fn-left"><a href='/index.php/vod/list/area/%E7%BE%8E%E5%9B%BD/id/16.html' target='_blank'>美国</a> </div>
+            <div class="lasted-time fn-right">2019-12-21</div>
+            </li>
+                        <li><div class="lasted-num fn-left">∷</div>
+            <div class="lasted-tit fn-left">
+                <h5 class="show-tipinfo"><a href="/index.php/vod/detail/id/5585.html">坑王驾到第四季</a><em>/</em></h5>
+                <div class="tipInfo">
+                    <div class="play-img"><img src="https://cn2.3days.cc/1569129923976334.jpeg" alt="坑王驾到第四季" /></div>
+                    <dl>
+                        <dt>坑王驾到第四季</dt>
+                        <dd><label>主演：</label>郭德纲</dd>
+                        <dd><label>剧情：</label>郭德纲联手爱奇艺推出《坑王驾到第4季》，9月14日起，每周六早8点上线，爱奇艺全网独播，爱奇艺VIP会员尊享老郭大型单口相声体验式综艺…</dd>
+                        <dd class="bg">状态：<br />更新时间：2019-12-21 15:00:26</dd>
+                    </dl>
+                </div>
+            </div>
+            <div class="lasted-type fn-left"><a href="/index.php/vod/type/id/3.html"></a></div>
+            <div class="lasted-tags fn-left"><a href='/index.php/vod/list/area/%E4%B8%AD%E5%9B%BD%E5%A4%A7%E9%99%86/id/3.html' target='_blank'>中国大陆</a> </div>
+            <div class="lasted-time fn-right">2019-12-21</div>
+            </li>
+                        <li><div class="lasted-num fn-left">∷</div>
+            <div class="lasted-tit fn-left">
+                <h5 class="show-tipinfo"><a href="/index.php/vod/detail/id/5582.html">重生之慕甄第三季</a><em>/</em></h5>
+                <div class="tipInfo">
+                    <div class="play-img"><img src="https://cn2.3days.cc/1572062302120755.jpeg" alt="重生之慕甄第三季" /></div>
+                    <dl>
+                        <dt>重生之慕甄第三季</dt>
+                        <dd><label>主演：</label>内详</dd>
+                        <dd><label>剧情：</label>女主历经三世，第一世，初见男主，便情根深种，不顾父兄反对，执意嫁给男主，初来乍到，在森严的京城中显得格格不入，少女情怀，只想在男主面前表现出美好的一面，反而丧失了自我，在深宫中，看着男主周旋于众多女子…</dd>
+                        <dd class="bg">状态：<br />更新时间：2019-12-21 11:00:18</dd>
+                    </dl>
+                </div>
+            </div>
+            <div class="lasted-type fn-left"><a href="/index.php/vod/type/id/4.html"></a></div>
+            <div class="lasted-tags fn-left"><a href='/index.php/vod/list/area/%E4%B8%AD%E5%9B%BD%E5%A4%A7%E9%99%86/id/4.html' target='_blank'>中国大陆</a> </div>
+            <div class="lasted-time fn-right">2019-12-21</div>
+            </li>
+                        <li><div class="lasted-num fn-left">∷</div>
+            <div class="lasted-tit fn-left">
+                <h5 class="show-tipinfo"><a href="/index.php/vod/detail/id/5581.html">总裁的替嫁新娘第一季</a><em>/</em></h5>
+                <div class="tipInfo">
+                    <div class="play-img"><img src="https://cn2.3days.cc/1571106508154599.jpeg" alt="总裁的替嫁新娘第一季" /></div>
+                    <dl>
+                        <dt>总裁的替嫁新娘第一季</dt>
+                        <dd><label>主演：</label>陆恩馨,胡盛,张冬,林永炬</dd>
+                        <dd><label>剧情：</label>姐姐在出嫁前一天和别的男人私奔，而她成了代替品要嫁给满腔怒火的他 新婚夜，帅气高冷的他道 “开始履行妻子的义务” 褪掉单薄的衣衫的她却被他叫着姐姐的名字。 她代替偿还姐姐的债，却不知……,…</dd>
+                        <dd class="bg">状态：<br />更新时间：2019-12-21 11:00:18</dd>
+                    </dl>
+                </div>
+            </div>
+            <div class="lasted-type fn-left"><a href="/index.php/vod/type/id/4.html"></a></div>
+            <div class="lasted-tags fn-left"><a href='/index.php/vod/list/area/%E4%B8%AD%E5%9B%BD%E5%A4%A7%E9%99%86/id/4.html' target='_blank'>中国大陆</a> </div>
+            <div class="lasted-time fn-right">2019-12-21</div>
+            </li>
+                        <li><div class="lasted-num fn-left">∷</div>
+            <div class="lasted-tit fn-left">
+                <h5 class="show-tipinfo"><a href="/index.php/vod/detail/id/5580.html">宝贝你好甜第一季</a><em>/</em></h5>
+                <div class="tipInfo">
+                    <div class="play-img"><img src="https://cn2.3days.cc/1572062115877250.jpeg" alt="宝贝你好甜第一季" /></div>
+                    <dl>
+                        <dt>宝贝你好甜第一季</dt>
+                        <dd><label>主演：</label>内详</dd>
+                        <dd><label>剧情：</label>安若曦本是血族亲王顾倾城命定的爱人，但是因为经历了三次转世失去了曾经的记忆，成为普通人，就读于贵族学院！ 顾倾城被弟弟算计，受了重伤，被篡夺王位逃到凡间恰巧被安若曦...…</dd>
+                        <dd class="bg">状态：<br />更新时间：2019-12-21 11:00:18</dd>
+                    </dl>
+                </div>
+            </div>
+            <div class="lasted-type fn-left"><a href="/index.php/vod/type/id/4.html"></a></div>
+            <div class="lasted-tags fn-left"><a href='/index.php/vod/list/area/%E4%B8%AD%E5%9B%BD%E5%A4%A7%E9%99%86/id/4.html' target='_blank'>中国大陆</a> </div>
+            <div class="lasted-time fn-right">2019-12-21</div>
+            </li>
+                        <li><div class="lasted-num fn-left">∷</div>
+            <div class="lasted-tit fn-left">
+                <h5 class="show-tipinfo"><a href="/index.php/vod/detail/id/5579.html">先婚后宠小娇妻第二季</a><em>/</em></h5>
+                <div class="tipInfo">
+                    <div class="play-img"><img src="https://cn2.3days.cc/1573803317786693.jpeg" alt="先婚后宠小娇妻第二季" /></div>
+                    <dl>
+                        <dt>先婚后宠小娇妻第二季</dt>
+                        <dd><label>主演：</label>未知</dd>
+                        <dd><label>剧情：</label>他是一手掌控着整个SH市经济，政治命脉的穆家嫡长孙 她是夏家刚找回失落多年的嫡出大小姐。 怀胎三月被毁容后丢下滔滔大江，这般万劫不复之地，究竟是谁救了她？晴空利用自己的聪慧，在穆家大少爷穆辰浩的帮助下…</dd>
+                        <dd class="bg">状态：<br />更新时间：2019-12-21 11:00:18</dd>
+                    </dl>
+                </div>
+            </div>
+            <div class="lasted-type fn-left"><a href="/index.php/vod/type/id/4.html"></a></div>
+            <div class="lasted-tags fn-left"><a href='/index.php/vod/list/area/%E4%B8%AD%E5%9B%BD%E5%A4%A7%E9%99%86/id/4.html' target='_blank'>中国大陆</a> </div>
+            <div class="lasted-time fn-right">2019-12-21</div>
+            </li>
+                        <li><div class="lasted-num fn-left">∷</div>
+            <div class="lasted-tit fn-left">
+                <h5 class="show-tipinfo"><a href="/index.php/vod/detail/id/5578.html">周一周六</a><em>/</em></h5>
+                <div class="tipInfo">
+                    <div class="play-img"><img src="https://cn2.3days.cc/1569659148663675.jpeg" alt="周一周六" /></div>
+                    <dl>
+                        <dt>周一周六</dt>
+                        <dd><label>主演：</label>未知</dd>
+                        <dd><label>剧情：</label>一个小小家庭里边，爸爸周新负责琐事，妈妈杨琪负责做事，大儿子周一负责找事，小女儿周六负责嗦事……拥有八九十年代童年的爸爸周新和妈妈杨琪，到底会如何带着他们两个一零后的宝贝度过快乐的每一天的呢？而身为一…</dd>
+                        <dd class="bg">状态：<br />更新时间：2019-12-21 11:00:18</dd>
+                    </dl>
+                </div>
+            </div>
+            <div class="lasted-type fn-left"><a href="/index.php/vod/type/id/4.html"></a></div>
+            <div class="lasted-tags fn-left"><a href='/index.php/vod/list/area/%E4%B8%AD%E5%9B%BD%E5%A4%A7%E9%99%86/id/4.html' target='_blank'>中国大陆</a> </div>
+            <div class="lasted-time fn-right">2019-12-21</div>
+            </li>
+                        <li><div class="lasted-num fn-left">∷</div>
+            <div class="lasted-tit fn-left">
+                <h5 class="show-tipinfo"><a href="/index.php/vod/detail/id/5577.html">墨生的地心世界</a><em>/</em></h5>
+                <div class="tipInfo">
+                    <div class="play-img"><img src="https://cn2.3days.cc/1572675773554164.jpeg" alt="墨生的地心世界" /></div>
+                    <dl>
+                        <dt>墨生的地心世界</dt>
+                        <dd><label>主演：</label>未知</dd>
+                        <dd><label>剧情：</label>《墨生的地心世界》是一部具有鲜明特色的幻想喜剧动画，透过墨生的爆笑生活成长经历，向观众展现地心世界充满奇思妙想的生活情景，透过独特夸张的视角，将观众带入一个充满快乐的世界执着单纯的墨生，幼稚无知的大智…</dd>
+                        <dd class="bg">状态：<br />更新时间：2019-12-21 11:00:18</dd>
+                    </dl>
+                </div>
+            </div>
+            <div class="lasted-type fn-left"><a href="/index.php/vod/type/id/4.html"></a></div>
+            <div class="lasted-tags fn-left"><a href='/index.php/vod/list/area/%E4%B8%AD%E5%9B%BD%E5%A4%A7%E9%99%86/id/4.html' target='_blank'>中国大陆</a> </div>
+            <div class="lasted-time fn-right">2019-12-21</div>
+            </li>
+                        <li><div class="lasted-num fn-left">∷</div>
+            <div class="lasted-tit fn-left">
+                <h5 class="show-tipinfo"><a href="/index.php/vod/detail/id/5576.html">圣者为王</a><em>/</em></h5>
+                <div class="tipInfo">
+                    <div class="play-img"><img src="https://cn2.3days.cc/1572664602866325.jpeg" alt="圣者为王" /></div>
+                    <dl>
+                        <dt>圣者为王</dt>
+                        <dd><label>主演：</label>未知</dd>
+                        <dd><label>剧情：</label>动物园园长蓝天意外获得超级觉醒系统，动物园内的动物通通血脉觉醒，穷奇、祖龙、凤凰等等神兽只能算最低阶的，然而当蓝天正沉浸组建自己的超级战队…</dd>
+                        <dd class="bg">状态：<br />更新时间：2019-12-21 11:00:18</dd>
+                    </dl>
+                </div>
+            </div>
+            <div class="lasted-type fn-left"><a href="/index.php/vod/type/id/4.html"></a></div>
+            <div class="lasted-tags fn-left"><a href='/index.php/vod/list/area/%E4%B8%AD%E5%9B%BD%E5%A4%A7%E9%99%86/id/4.html' target='_blank'>中国大陆</a> </div>
+            <div class="lasted-time fn-right">2019-12-21</div>
+            </li>
+                        <li><div class="lasted-num fn-left">∷</div>
+            <div class="lasted-tit fn-left">
+                <h5 class="show-tipinfo"><a href="/index.php/vod/detail/id/5575.html">王爵的私有宝贝</a><em>/</em></h5>
+                <div class="tipInfo">
+                    <div class="play-img"><img src="https://cn2.3days.cc/1562381783725849.jpeg" alt="王爵的私有宝贝" /></div>
+                    <dl>
+                        <dt>王爵的私有宝贝</dt>
+                        <dd><label>主演：</label>未知</dd>
+                        <dd><label>剧情：</label>因为同父异母姐姐的设计，尹小沫阴差阳错怀上了宁国王子宫少宸的孩子在继母与姐姐的共同隐瞒下，她生下的双胞胎之一，被姐姐尹倩倩抱去宁国，并李代桃僵成为了宫少宸的未婚妻。六年后，为抚养患有先天性心肌炎的儿子…</dd>
+                        <dd class="bg">状态：<br />更新时间：2019-12-21 11:00:18</dd>
+                    </dl>
+                </div>
+            </div>
+            <div class="lasted-type fn-left"><a href="/index.php/vod/type/id/4.html"></a></div>
+            <div class="lasted-tags fn-left"><a href='/index.php/vod/list/area/%E4%B8%AD%E5%9B%BD%E5%A4%A7%E9%99%86/id/4.html' target='_blank'>中国大陆</a> </div>
+            <div class="lasted-time fn-right">2019-12-21</div>
+            </li>
+                        <li><div class="lasted-num fn-left">∷</div>
+            <div class="lasted-tit fn-left">
+                <h5 class="show-tipinfo"><a href="/index.php/vod/detail/id/5574.html">斗罗大陆</a><em>/</em></h5>
+                <div class="tipInfo">
+                    <div class="play-img"><img src="https://cn2.3days.cc/1550751619823419.jpg" alt="斗罗大陆" /></div>
+                    <dl>
+                        <dt>斗罗大陆</dt>
+                        <dd><label>主演：</label>沈磊,程玉珠,黄翔宇,王肖兵,倪康,赵乾景,吴磊,张琦,秦紫翼</dd>
+                        <dd><label>剧情：</label>唐门外门弟子唐三，因偷学内门绝学为唐门所不容，跳崖明志时却发现没有死，反而以另外一个身份来到了另一个世界，一个属于武魂的世界，名叫斗罗大陆这里没有魔法，没有斗气，没有武术，却有神奇的武魂。这里的每个人…</dd>
+                        <dd class="bg">状态：<br />更新时间：2019-12-21 11:00:18</dd>
+                    </dl>
+                </div>
+            </div>
+            <div class="lasted-type fn-left"><a href="/index.php/vod/type/id/4.html"></a></div>
+            <div class="lasted-tags fn-left"><a href='/index.php/vod/list/area/%E4%B8%AD%E5%9B%BD%E5%A4%A7%E9%99%86/id/4.html' target='_blank'>中国大陆</a> </div>
+            <div class="lasted-time fn-right">2019-12-21</div>
+            </li>
+                        <li><div class="lasted-num fn-left">∷</div>
+            <div class="lasted-tit fn-left">
+                <h5 class="show-tipinfo"><a href="/index.php/vod/detail/id/5573.html">食戟之灵 神之皿</a><em>/</em></h5>
+                <div class="tipInfo">
+                    <div class="play-img"><img src="https://cn2.3days.cc/1570939439430591.jpeg" alt="食戟之灵 神之皿" /></div>
+                    <dl>
+                        <dt>食戟之灵 神之皿</dt>
+                        <dd><label>主演：</label>松冈祯丞,金元寿子,高桥未奈美,石田彰,伊藤静,花江夏树,樱井孝宏,梶裕贵,楠大典,小西克幸,钉宫理惠,花泽香菜,杉田智和,速水奖,小山力也</dd>
+                        <dd><label>剧情：</label>一边在自家的餐馆“幸平”帮忙，一边磨炼料理水平的幸平创真，进入了超级精英料理学校“远月茶寮料理学园”创真在学园内外与各种各样的料理人相遇并不断成长，但随着薙切蓟就任远月学园的新领袖，状况发生了转变。在…</dd>
+                        <dd class="bg">状态：<br />更新时间：2019-12-21 11:00:18</dd>
+                    </dl>
+                </div>
+            </div>
+            <div class="lasted-type fn-left"><a href="/index.php/vod/type/id/4.html"></a></div>
+            <div class="lasted-tags fn-left"><a href='/index.php/vod/list/area/%E6%97%A5%E6%9C%AC/id/4.html' target='_blank'>日本</a> </div>
+            <div class="lasted-time fn-right">2019-12-21</div>
+            </li>
+                        <li><div class="lasted-num fn-left">∷</div>
+            <div class="lasted-tit fn-left">
+                <h5 class="show-tipinfo"><a href="/index.php/vod/detail/id/5530.html">为全人类第一季</a><em>/</em></h5>
+                <div class="tipInfo">
+                    <div class="play-img"><img src="https://cn2.3days.cc/1572750626258483.jpeg" alt="为全人类第一季" /></div>
+                    <dl>
+                        <dt>为全人类第一季</dt>
+                        <dd><label>主演：</label>乔尔·金纳曼,莎拉·琼斯,斯宾塞·加雷特,迈克尔·哈尔尼,丹·华纳,瑞贝卡·薇索基,华莱士·朗翰,蓝尼·雅各布森,,内森·科德里,泰特·布鲁姆,瑞恩·肯尼</dd>
+                        <dd><label>剧情：</label>Apple的流媒体平台AppleTV+旗下自制剧——太空科幻剧《为了全人类》(For All Mankind)发布预告，这是AppleTV+旗下首部曝光预告的剧集
+
+该剧由乔尔·金纳曼、莎拉·琼斯(《…</dd>
+                        <dd class="bg">状态：<br />更新时间：2019-12-21 11:00:18</dd>
+                    </dl>
+                </div>
+            </div>
+            <div class="lasted-type fn-left"><a href="/index.php/vod/type/id/16.html"></a></div>
+            <div class="lasted-tags fn-left"><a href='/index.php/vod/list/area/%E7%BE%8E%E5%9B%BD/id/16.html' target='_blank'>美国</a> </div>
+            <div class="lasted-time fn-right">2019-12-21</div>
+            </li>
+                        <li><div class="lasted-num fn-left">∷</div>
+            <div class="lasted-tit fn-left">
+                <h5 class="show-tipinfo"><a href="/index.php/vod/detail/id/5583.html">多功能老婆粤语版</a><em>/</em></h5>
+                <div class="tipInfo">
+                    <div class="play-img"><img src="https://cn2.3days.cc/1574696530902448.jpeg" alt="多功能老婆粤语版" /></div>
+                    <dl>
+                        <dt>多功能老婆粤语版</dt>
+                        <dd><label>主演：</label>周柏豪,黄浩然,朱晨丽,杨千嬅,陈炜</dd>
+                        <dd><label>剧情：</label>曾打造经典TVB剧集《真情》的金牌监制陈宝华，相隔16年回巢，打造剧集《多功能老婆》，在尖沙咀举行记者会公布详情，主要演员周柏豪、黄浩然、陈炜、朱晨丽、黎燕珊和黄锦燊等齐齐亮相，至于女主角则压轴公布，…</dd>
+                        <dd class="bg">状态：<br />更新时间：2019-12-21 11:00:18</dd>
+                    </dl>
+                </div>
+            </div>
+            <div class="lasted-type fn-left"><a href="/index.php/vod/type/id/14.html"></a></div>
+            <div class="lasted-tags fn-left"><a href='/index.php/vod/list/area/%E4%B8%AD%E5%9B%BD%E9%A6%99%E6%B8%AF/id/14.html' target='_blank'>中国香港</a> </div>
+            <div class="lasted-time fn-right">2019-12-21</div>
+            </li>
+                        <li><div class="lasted-num fn-left">∷</div>
+            <div class="lasted-tit fn-left">
+                <h5 class="show-tipinfo"><a href="/index.php/vod/detail/id/5474.html">多功能老婆国语版</a><em>/</em></h5>
+                <div class="tipInfo">
+                    <div class="play-img"><img src="https://cn2.3days.cc/1574751904256391.jpeg" alt="多功能老婆国语版" /></div>
+                    <dl>
+                        <dt>多功能老婆国语版</dt>
+                        <dd><label>主演：</label>周柏豪,,黄浩然,朱晨丽,杨千嬅,陈炜</dd>
+                        <dd><label>剧情：</label>                                　　蓝飞(杨千嬅饰)是一位美丽时尚、开朗率真的「多功能」主妇，有一个爱她的建筑师丈夫尚剑雄(黄浩然饰)，一个活泼聪明的儿子尚启佳，生活美…</dd>
+                        <dd class="bg">状态：<br />更新时间：2019-12-21 11:00:18</dd>
+                    </dl>
+                </div>
+            </div>
+            <div class="lasted-type fn-left"><a href="/index.php/vod/type/id/14.html"></a></div>
+            <div class="lasted-tags fn-left"><a href='/index.php/vod/list/area/%E4%B8%AD%E5%9B%BD%E9%A6%99%E6%B8%AF/id/14.html' target='_blank'>中国香港</a> </div>
+            <div class="lasted-time fn-right">2019-12-21</div>
+            </li>
+                        <li><div class="lasted-num fn-left">∷</div>
+            <div class="lasted-tit fn-left">
+                <h5 class="show-tipinfo"><a href="/index.php/vod/detail/id/5572.html">碧蓝幻想第二季</a><em>/</em></h5>
+                <div class="tipInfo">
+                    <div class="play-img"><img src="https://cn2.3days.cc/1570243212817826.jpeg" alt="碧蓝幻想第二季" /></div>
+                    <dl>
+                        <dt>碧蓝幻想第二季</dt>
+                        <dd><label>主演：</label>小野友树,东山奈央,钉宫理惠,泽城美雪,平田广明,田村由加莉,藤原启治,田中理惠,加藤英美里,今井麻美,米泽圆,石川界人</dd>
+                        <dd><label>剧情：</label>现在，再一次去往广大的蓝天——
+憧憬天空、以星之岛为目标的少年，与从天而降、不可思议的蓝发少女，两人成为了命运与生命的共同体。向天空出发的少年与少女，与值得信赖的同伴和前往目的地的骑空艇相逢。经由躲避…</dd>
+                        <dd class="bg">状态：<br />更新时间：2019-12-21 10:00:16</dd>
+                    </dl>
+                </div>
+            </div>
+            <div class="lasted-type fn-left"><a href="/index.php/vod/type/id/4.html"></a></div>
+            <div class="lasted-tags fn-left"><a href='/index.php/vod/list/area/%E6%97%A5%E6%9C%AC/id/4.html' target='_blank'>日本</a> </div>
+            <div class="lasted-time fn-right">2019-12-21</div>
+            </li>
+                        <li><div class="lasted-num fn-left">∷</div>
+            <div class="lasted-tit fn-left">
+                <h5 class="show-tipinfo"><a href="/index.php/vod/detail/id/5571.html">炎炎消防队</a><em>/</em></h5>
+                <div class="tipInfo">
+                    <div class="play-img"><img src="https://cn2.3days.cc/1562387628397568.jpeg" alt="炎炎消防队" /></div>
+                    <dl>
+                        <dt>炎炎消防队</dt>
+                        <dd><label>主演：</label>梶原岳人,小林裕介,市道真央,楠大典,兴津和幸,日野聪,关智一,悠木碧,小西克幸,Lynn,河西健吾,宫野真守,前野智昭,上条沙惠子,铃村健一,中井和哉,津田健</dd>
+                        <dd><label>剧情：</label>全人类为之恐惧——
+
+没有任何异常的人类突然燃烧，化作操纵火焰的怪物“焰人”，并极尽破坏之能事的“人体自燃现象”。面对火焰的恐怖挺身而出的特殊消防队，肩负解开这一现象的谜团，并拯救人类的使命！由于某种…</dd>
+                        <dd class="bg">状态：<br />更新时间：2019-12-21 10:00:16</dd>
+                    </dl>
+                </div>
+            </div>
+            <div class="lasted-type fn-left"><a href="/index.php/vod/type/id/4.html"></a></div>
+            <div class="lasted-tags fn-left"><a href='/index.php/vod/list/area/%E6%97%A5%E6%9C%AC/id/4.html' target='_blank'>日本</a> </div>
+            <div class="lasted-time fn-right">2019-12-21</div>
+            </li>
+                        <li><div class="lasted-num fn-left">∷</div>
+            <div class="lasted-tit fn-left">
+                <h5 class="show-tipinfo"><a href="/index.php/vod/detail/id/5570.html">高分少女第二季</a><em>/</em></h5>
+                <div class="tipInfo">
+                    <div class="play-img"><img src="https://cn2.3days.cc/1572062510761938.jpeg" alt="高分少女第二季" /></div>
+                    <dl>
+                        <dt>高分少女第二季</dt>
+                        <dd><label>主演：</label>天崎滉平,铃代纱弓,广濑有纪,赤崎千夏,新井里美,兴津和幸,山下大辉,伊藤静,长岛雄一,御堂大丽亚,中村悠一,植田佳奈,井泽诗织,铃村健一,寺岛拓笃,诹访部顺一,小野贤章,安元洋贵,三宅健太,武虎</dd>
+                        <dd><label>剧情：</label>少年，喜爱游戏
+少女，与游戏相遇。
+在对胜利的渴望、技术的探求心、个人的自尊心混杂的游戏中心当中，诞生、发展的友情与恋情。在朋友和家人以及游戏角色的支持下，少年少女们变得坚强，有了很大的成长。只要不放…</dd>
+                        <dd class="bg">状态：<br />更新时间：2019-12-21 10:00:16</dd>
+                    </dl>
+                </div>
+            </div>
+            <div class="lasted-type fn-left"><a href="/index.php/vod/type/id/4.html"></a></div>
+            <div class="lasted-tags fn-left"><a href='/index.php/vod/list/area/%E6%97%A5%E6%9C%AC/id/4.html' target='_blank'>日本</a> </div>
+            <div class="lasted-time fn-right">2019-12-21</div>
+            </li>
+                        <li><div class="lasted-num fn-left">∷</div>
+            <div class="lasted-tit fn-left">
+                <h5 class="show-tipinfo"><a href="/index.php/vod/detail/id/5569.html">穷妈妈富妈妈</a><em>/</em></h5>
+                <div class="tipInfo">
+                    <div class="play-img"><img src="https://cn2.3days.cc/1576892257487397.jpeg" alt="穷妈妈富妈妈" /></div>
+                    <dl>
+                        <dt>穷妈妈富妈妈</dt>
+                        <dd><label>主演：</label>宋春丽,李诚儒,于小慧,张戈,卢思思,周毅,赵玲琪,马崇乐,李宜娟,曹克难,高玉庆,王译莹,夏雨,夏侯彬,姚美伊,孙盛,刘超</dd>
+                        <dd><label>剧情：</label>　　刘小东的妈妈田芳是一个工作敬业，上进心强的女人，通过自己的努力从一名普通纺织厂工人奋斗到厂领导的位置，获得过无数荣誉而其父刘大为虽然头脑灵活，但不肯脚踏实地工作，喜欢和朋友喝酒游玩，因此一直是一名…</dd>
+                        <dd class="bg">状态：<br />更新时间：2019-12-21 10:00:16</dd>
+                    </dl>
+                </div>
+            </div>
+            <div class="lasted-type fn-left"><a href="/index.php/vod/type/id/13.html"></a></div>
+            <div class="lasted-tags fn-left"><a href='/index.php/vod/list/area/%E4%B8%AD%E5%9B%BD%E5%A4%A7%E9%99%86/id/13.html' target='_blank'>中国大陆</a> </div>
+            <div class="lasted-time fn-right">2019-12-21</div>
+            </li>
+                        <li><div class="lasted-num fn-left">∷</div>
+            <div class="lasted-tit fn-left">
+                <h5 class="show-tipinfo"><a href="/index.php/vod/detail/id/5568.html">厨神小当家</a><em>/</em></h5>
+                <div class="tipInfo">
+                    <div class="play-img"><img src="https://cn2.3days.cc/1570937701260144.jpeg" alt="厨神小当家" /></div>
+                    <dl>
+                        <dt>厨神小当家</dt>
+                        <dd><label>主演：</label>藤原夏海,茅野爱衣,藤井雪代,中村悠一,杉田智和,榎木淳弥,下山吉光,辻亲八,中川庆一,甲斐田裕子</dd>
+                        <dd><label>剧情：</label>根据小川悦司经典漫画改编，《真·中华一番》（《中华小当家》）即将推出全新制作的动画剧集
+…</dd>
+                        <dd class="bg">状态：<br />更新时间：2019-12-21 10:00:16</dd>
+                    </dl>
+                </div>
+            </div>
+            <div class="lasted-type fn-left"><a href="/index.php/vod/type/id/4.html"></a></div>
+            <div class="lasted-tags fn-left"><a href='/index.php/vod/list/area/%E4%B8%AD%E5%9B%BD%E5%A4%A7%E9%99%86/id/4.html' target='_blank'>中国大陆</a> </div>
+            <div class="lasted-time fn-right">2019-12-21</div>
+            </li>
+                        <li><div class="lasted-num fn-left">∷</div>
+            <div class="lasted-tit fn-left">
+                <h5 class="show-tipinfo"><a href="/index.php/vod/detail/id/5567.html">歌舞伎町夏洛克</a><em>/</em></h5>
+                <div class="tipInfo">
+                    <div class="play-img"><img src="https://cn2.3days.cc/1570938699194294.jpeg" alt="歌舞伎町夏洛克" /></div>
+                    <dl>
+                        <dt>歌舞伎町夏洛克</dt>
+                        <dd><label>主演：</label>小西克幸,中村悠一,山下诚一郎,齐藤壮马,东山奈央,诹访部顺一,东内麻里子,青山穣,橘龙丸</dd>
+                        <dd><label>剧情：</label>新宿区东侧……极尽混沌的街区中心，是霓虹闪烁的歌舞伎町光线愈强则暗影愈浓，在恶人潜伏着的黑暗更深处，侦探长屋的灯光长明。哈德森夫人所经营的这间长屋，聚集着各种古怪之人。野心满满的洁癖侦探、迷惑男人的姐…</dd>
+                        <dd class="bg">状态：<br />更新时间：2019-12-21 10:00:16</dd>
+                    </dl>
+                </div>
+            </div>
+            <div class="lasted-type fn-left"><a href="/index.php/vod/type/id/4.html"></a></div>
+            <div class="lasted-tags fn-left"><a href='/index.php/vod/list/area/%E6%97%A5%E6%9C%AC/id/4.html' target='_blank'>日本</a> </div>
+            <div class="lasted-time fn-right">2019-12-21</div>
+            </li>
+                        <li><div class="lasted-num fn-left">∷</div>
+            <div class="lasted-tit fn-left">
+                <h5 class="show-tipinfo"><a href="/index.php/vod/detail/id/5566.html">过街英雄粤语版</a><em>/</em></h5>
+                <div class="tipInfo">
+                    <div class="play-img"><img src="https://cn2.3days.cc/1576548642177211.jpeg" alt="过街英雄粤语版" /></div>
+                    <dl>
+                        <dt>过街英雄粤语版</dt>
+                        <dd><label>主演：</label>森美,黄翠如,江嘉敏,张国强,马海伦,鲁振顺,卢宛茵,周志康,黄子雄,吴瑞庭,唐嘉麟,吴嘉仪,林韦辰,曾航生,黎彼得,于洋,谭凯琪,郭少芸,萧徽勇,李绮雯,黄炜溏,雪妮,徐忠信,郑启泰,谭伟权,刘芷希,王致迪,郑咏谦,崔锦棠,陈婉婷,袁镇业,丁乐锶,陈泓达,钱悦</dd>
+                        <dd><label>剧情：</label>…</dd>
+                        <dd class="bg">状态：<br />更新时间：2019-12-21 10:00:16</dd>
+                    </dl>
+                </div>
+            </div>
+            <div class="lasted-type fn-left"><a href="/index.php/vod/type/id/14.html"></a></div>
+            <div class="lasted-tags fn-left"><a href='/index.php/vod/list/area/%E4%B8%AD%E5%9B%BD%E9%A6%99%E6%B8%AF/id/14.html' target='_blank'>中国香港</a> </div>
+            <div class="lasted-time fn-right">2019-12-21</div>
+            </li>
+                        <li><div class="lasted-num fn-left">∷</div>
+            <div class="lasted-tit fn-left">
+                <h5 class="show-tipinfo"><a href="/index.php/vod/detail/id/5565.html">棒球大联盟</a><em>/</em></h5>
+                <div class="tipInfo">
+                    <div class="play-img"><img src="https://cn2.3days.cc/1576287038844673.jpeg" alt="棒球大联盟" /></div>
+                    <dl>
+                        <dt>棒球大联盟</dt>
+                        <dd><label>主演：</label>南宫珉,朴恩斌,赵炳奎,金道贤,朴素珍</dd>
+                        <dd><label>剧情：</label>                                　　该剧是讲述排名倒数第一、球迷的眼泪都流干了的棒球队的新上任的团长，准备不平凡的赛季的冬季物语 这是一部讲述棒球队准备赛季的电视剧，每…</dd>
+                        <dd class="bg">状态：<br />更新时间：2019-12-21 10:00:16</dd>
+                    </dl>
+                </div>
+            </div>
+            <div class="lasted-type fn-left"><a href="/index.php/vod/type/id/15.html"></a></div>
+            <div class="lasted-tags fn-left"><a href='/index.php/vod/list/area/%E9%9F%A9%E5%9B%BD/id/15.html' target='_blank'>韩国</a> </div>
+            <div class="lasted-time fn-right">2019-12-21</div>
+            </li>
+                        <li><div class="lasted-num fn-left">∷</div>
+            <div class="lasted-tit fn-left">
+                <h5 class="show-tipinfo"><a href="/index.php/vod/detail/id/5564.html">星合之空</a><em>/</em></h5>
+                <div class="tipInfo">
+                    <div class="play-img"><img src="https://cn2.3days.cc/1570782103876276.jpeg" alt="星合之空" /></div>
+                    <dl>
+                        <dt>星合之空</dt>
+                        <dd><label>主演：</label>花江夏树,畠中祐,松冈祯丞,佐藤元,丰永利行,佐藤圭辅,小林裕介,天崎滉平,山谷祥生,峰田茉优,松田飒水,夏川椎菜,坂本真绫,古川慎,樱井孝宏,甲斐田裕</dd>
+                        <dd><label>剧情：</label>以即将废部的男子中学软式网球部为舞台，讲述了抱着各自想法的少年们讴歌青春的故事
+…</dd>
+                        <dd class="bg">状态：<br />更新时间：2019-12-21 10:00:16</dd>
+                    </dl>
+                </div>
+            </div>
+            <div class="lasted-type fn-left"><a href="/index.php/vod/type/id/4.html"></a></div>
+            <div class="lasted-tags fn-left"><a href='/index.php/vod/list/area/%E6%97%A5%E6%9C%AC/id/4.html' target='_blank'>日本</a> </div>
+            <div class="lasted-time fn-right">2019-12-21</div>
+            </li>
+                        <li><div class="lasted-num fn-left">∷</div>
+            <div class="lasted-tit fn-left">
+                <h5 class="show-tipinfo"><a href="/index.php/vod/detail/id/5563.html">巧克力</a><em>/</em></h5>
+                <div class="tipInfo">
+                    <div class="play-img"><img src="https://cn2.3days.cc/1575077426938168.jpeg" alt="巧克力" /></div>
+                    <dl>
+                        <dt>巧克力</dt>
+                        <dd><label>主演：</label>尹启相,河智苑</dd>
+                        <dd><label>剧情：</label>                                　　该剧讲述脑神经外科医生和意大利世界料理大会出身的主厨，治愈过去的伤痕，给需要临终关怀的人士提供料理的故事
+             …</dd>
+                        <dd class="bg">状态：<br />更新时间：2019-12-21 10:00:16</dd>
+                    </dl>
+                </div>
+            </div>
+            <div class="lasted-type fn-left"><a href="/index.php/vod/type/id/15.html"></a></div>
+            <div class="lasted-tags fn-left"><a href='/index.php/vod/list/area/%E9%9F%A9%E5%9B%BD/id/15.html' target='_blank'>韩国</a> </div>
+            <div class="lasted-time fn-right">2019-12-21</div>
+            </li>
+                        <li><div class="lasted-num fn-left">∷</div>
+            <div class="lasted-tit fn-left">
+                <h5 class="show-tipinfo"><a href="/index.php/vod/detail/id/5476.html">唐砖粤语版</a><em>/</em></h5>
+                <div class="tipInfo">
+                    <div class="play-img"><img src="https://cn2.3days.cc/1575183101568922.jpeg" alt="唐砖粤语版" /></div>
+                    <dl>
+                        <dt>唐砖粤语版</dt>
+                        <dd><label>主演：</label>张佳宁,王天辰,张智尧,袁咏仪,王文杰,于子洋,王永泉</dd>
+                        <dd><label>剧情：</label>　科考队后勤安保人员云不器因一场考古事故而来到贞观年间，他被迫冒用祖先“云烨”之名开始了在唐朝生活机缘巧合下遇见与已故女友小冉长相一样的墨家之女李安澜，并与其产生纠葛。
+　　他利用现代技能，屡次救李安…</dd>
+                        <dd class="bg">状态：<br />更新时间：2019-12-21 10:00:16</dd>
+                    </dl>
+                </div>
+            </div>
+            <div class="lasted-type fn-left"><a href="/index.php/vod/type/id/13.html"></a></div>
+            <div class="lasted-tags fn-left"><a href='/index.php/vod/list/area/%E4%B8%AD%E5%9B%BD%E5%A4%A7%E9%99%86/id/13.html' target='_blank'>中国大陆</a> </div>
+            <div class="lasted-time fn-right">2019-12-21</div>
+            </li>
+                        <li><div class="lasted-num fn-left">∷</div>
+            <div class="lasted-tit fn-left">
+                <h5 class="show-tipinfo"><a href="/index.php/vod/detail/id/5562.html">老师，你不知道吗</a><em>/</em></h5>
+                <div class="tipInfo">
+                    <div class="play-img"><img src="https://cn2.3days.cc/1576047843563241.jpeg" alt="老师，你不知道吗" /></div>
+                    <dl>
+                        <dt>老师，你不知道吗</dt>
+                        <dd><label>主演：</label>马场富美加,赤楚卫二,矢作穗香,和田雅成,古川毅,宫世琉弥,反田叶月</dd>
+                        <dd><label>剧情：</label>这是一部基于浅野彩（Aya Asano）处理的漫画的爱情故事 故事开始于流行的漫画家“葵手稿”葵花葵（Aoi Hana）开始与偶然进入的一家来自美容院的颇具魅力的美容师Riichi Kido交往。 当…</dd>
+                        <dd class="bg">状态：<br />更新时间：2019-12-21 02:57:07</dd>
+                    </dl>
+                </div>
+            </div>
+            <div class="lasted-type fn-left"><a href="/index.php/vod/type/id/15.html"></a></div>
+            <div class="lasted-tags fn-left"><a href='/index.php/vod/list/area/%E6%97%A5%E6%9C%AC/id/15.html' target='_blank'>日本</a> </div>
+            <div class="lasted-time fn-right">2019-12-21</div>
+            </li>
+                        <li><div class="lasted-num fn-left">∷</div>
+            <div class="lasted-tit fn-left">
+                <h5 class="show-tipinfo"><a href="/index.php/vod/detail/id/5561.html">反骗天下</a><em>/</em></h5>
+                <div class="tipInfo">
+                    <div class="play-img"><img src="https://cn2.3days.cc/1575462686150514.jpeg" alt="反骗天下" /></div>
+                    <dl>
+                        <dt>反骗天下</dt>
+                        <dd><label>主演：</label>高仁,肖宇梁,范梦,刘洋</dd>
+                        <dd><label>剧情：</label>                                　　《反骗天下》立足于“保险调查员”的独特视角，讲述了雅痞小叔方元（高仁饰）与天才少年米若（肖宇梁 饰）、二次元少女罗昕（范梦 饰）、社…</dd>
+                        <dd class="bg">状态：<br />更新时间：2019-12-21 02:57:07</dd>
+                    </dl>
+                </div>
+            </div>
+            <div class="lasted-type fn-left"><a href="/index.php/vod/type/id/13.html"></a></div>
+            <div class="lasted-tags fn-left"><a href='/index.php/vod/list/area/%E4%B8%AD%E5%9B%BD%E5%A4%A7%E9%99%86/id/13.html' target='_blank'>中国大陆</a> </div>
+            <div class="lasted-time fn-right">2019-12-21</div>
+            </li>
+                        <li><div class="lasted-num fn-left">∷</div>
+            <div class="lasted-tit fn-left">
+                <h5 class="show-tipinfo"><a href="/index.php/vod/detail/id/5560.html">这样唱好美</a><em>/</em></h5>
+                <div class="tipInfo">
+                    <div class="play-img"><img src="https://cn2.3days.cc/1572615161996514.jpeg" alt="这样唱好美" /></div>
+                    <dl>
+                        <dt>这样唱好美</dt>
+                        <dd><label>主演：</label>张绍刚,蔡琴,谢娜,陈立农,刘宪华,戚薇,李承炫</dd>
+                        <dd><label>剧情：</label>爱奇艺《这样唱好美》节目选取来自不同年龄阶段、不同身份背景的、热爱歌唱的东方女性，以不同阶段、不同身份出场竞演的方式，最终挑选出华语经典名曲的最佳演绎者，即最美女声
+…</dd>
+                        <dd class="bg">状态：<br />更新时间：2019-12-21 02:57:07</dd>
+                    </dl>
+                </div>
+            </div>
+            <div class="lasted-type fn-left"><a href="/index.php/vod/type/id/3.html"></a></div>
+            <div class="lasted-tags fn-left"><a href='/index.php/vod/list/area/%E4%B8%AD%E5%9B%BD%E5%A4%A7%E9%99%86/id/3.html' target='_blank'>中国大陆</a> </div>
+            <div class="lasted-time fn-right">2019-12-21</div>
+            </li>
+                        <li><div class="lasted-num fn-left">∷</div>
+            <div class="lasted-tit fn-left">
+                <h5 class="show-tipinfo"><a href="/index.php/vod/detail/id/5559.html">未经安排的青春</a><em>/</em></h5>
+                <div class="tipInfo">
+                    <div class="play-img"><img src="https://cn2.3days.cc/1575031164436678.jpeg" alt="未经安排的青春" /></div>
+                    <dl>
+                        <dt>未经安排的青春</dt>
+                        <dd><label>主演：</label>黄宥明,余昊洋,张芮晴,周历杰</dd>
+                        <dd><label>剧情：</label>这是一部讲述当下正在进行时的18岁到24岁的年轻人的成长故事，对梦想的探索，对未来的选择，在友情上的得失，在爱情上的取舍，在亲情上的隔阂，在理想与现实中的彷徨失措，在初入社会时的妥协与坚持，他们是一群…</dd>
+                        <dd class="bg">状态：<br />更新时间：2019-12-21 02:57:07</dd>
+                    </dl>
+                </div>
+            </div>
+            <div class="lasted-type fn-left"><a href="/index.php/vod/type/id/13.html"></a></div>
+            <div class="lasted-tags fn-left"><a href='/index.php/vod/list/area/%E4%B8%AD%E5%9B%BD%E5%A4%A7%E9%99%86/id/13.html' target='_blank'>中国大陆</a> </div>
+            <div class="lasted-time fn-right">2019-12-21</div>
+            </li>
+                        <li><div class="lasted-num fn-left">∷</div>
+            <div class="lasted-tit fn-left">
+                <h5 class="show-tipinfo"><a href="/index.php/vod/detail/id/5557.html">早间新闻第一季</a><em>/</em></h5>
+                <div class="tipInfo">
+                    <div class="play-img"><img src="https://cn2.3days.cc/1572760118645969.jpeg" alt="早间新闻第一季" /></div>
+                    <dl>
+                        <dt>早间新闻第一季</dt>
+                        <dd><label>主演：</label>詹妮弗·安妮斯顿,瑞茜·威瑟斯彭,史蒂夫·卡瑞尔,内斯特·卡博内尔,比利·克鲁德普,马克·杜普拉斯,古古·姆巴塔-劳,凯伦·皮特曼,蓓尔·波利,伊恩·戈</dd>
+                        <dd><label>剧情：</label>让我们揭开帷幕，聚焦每晨陪伴大众迎接新一天的新闻主播，走近早间新闻节目的台前幕后！
+
+剧集由詹妮弗·安妮斯顿、瑞茜·威瑟斯彭和史蒂夫·卡瑞尔领衔主演，以大胆直接的拍摄手法透视当代职场百态
+…</dd>
+                        <dd class="bg">状态：<br />更新时间：2019-12-21 02:57:07</dd>
+                    </dl>
+                </div>
+            </div>
+            <div class="lasted-type fn-left"><a href="/index.php/vod/type/id/16.html"></a></div>
+            <div class="lasted-tags fn-left"><a href='/index.php/vod/list/area/%E7%BE%8E%E5%9B%BD/id/16.html' target='_blank'>美国</a> </div>
+            <div class="lasted-time fn-right">2019-12-21</div>
+            </li>
+                        <li><div class="lasted-num fn-left">∷</div>
+            <div class="lasted-tit fn-left">
+                <h5 class="show-tipinfo"><a href="/index.php/vod/detail/id/5556.html">8号警报</a><em>/</em></h5>
+                <div class="tipInfo">
+                    <div class="play-img"><img src="https://cn2.3days.cc/1576840968261128.jpeg" alt="8号警报" /></div>
+                    <dl>
+                        <dt>8号警报</dt>
+                        <dd><label>主演：</label>斯蒂芬·阿梅尔,罗比·阿美尔,姜成镐,蕾斯拉·德·奥利维拉,格雷格·布瑞克,卡瑞·玛切特,彼德·奥德博拉治,肖恩·本森,阿隆·艾布拉姆斯,格伦达·布拉甘</dd>
+                        <dd><label>剧情：</label>曾经的“未来之城”林肯城，4%人口具有超能力，其中大多数却在自动化潮流中陷入贫困与歧视的泥沼，日渐成为社会负担甚至隐患，康纳·里德（罗比·艾梅尔 饰）便是这样一名青年临时工——面对母亲的天价医疗费，债…</dd>
+                        <dd class="bg">状态：<br />更新时间：2019-12-21 02:57:07</dd>
+                    </dl>
+                </div>
+            </div>
+            <div class="lasted-type fn-left"><a href="/index.php/vod/type/id/9.html"></a></div>
+            <div class="lasted-tags fn-left"><a href='/index.php/vod/list/area/%E5%8A%A0%E6%8B%BF%E5%A4%A7/id/9.html' target='_blank'>加拿大</a> </div>
+            <div class="lasted-time fn-right">2019-12-21</div>
+            </li>
+                        <li><div class="lasted-num fn-left">∷</div>
+            <div class="lasted-tit fn-left">
+                <h5 class="show-tipinfo"><a href="/index.php/vod/detail/id/5555.html">猎魔人第一季</a><em>/</em></h5>
+                <div class="tipInfo">
+                    <div class="play-img"><img src="https://cn2.3days.cc/1576837748641587.jpeg" alt="猎魔人第一季" /></div>
+                    <dl>
+                        <dt>猎魔人第一季</dt>
+                        <dd><label>主演：</label>亨利·卡维尔,弗莱娅·艾伦,米莉·布拉迪,玛安娜·本灵,安亚·查洛特拉,埃蒙·法伦,亚当·利维,乔迪·梅,拉斯·米克尔森,马切伊·穆西尔,罗伊斯·皮尔逊,</dd>
+                        <dd><label>剧情：</label>《猎魔人》改编自畅销的奇幻小说系列，讲述了一个关于命运和家庭的史诗故事利维亚的杰洛特是一名独居的猎魔人，他努力在这个人类比野兽更邪恶的世界上寻得自己的一席之地。但命运将他推向一名强大的女术士和一位身上…</dd>
+                        <dd class="bg">状态：<br />更新时间：2019-12-21 02:57:07</dd>
+                    </dl>
+                </div>
+            </div>
+            <div class="lasted-type fn-left"><a href="/index.php/vod/type/id/16.html"></a></div>
+            <div class="lasted-tags fn-left"><a href='/index.php/vod/list/area/%E7%BE%8E%E5%9B%BD/id/16.html' target='_blank'>美国</a> </div>
+            <div class="lasted-time fn-right">2019-12-21</div>
+            </li>
+                        <li><div class="lasted-num fn-left">∷</div>
+            <div class="lasted-tit fn-left">
+                <h5 class="show-tipinfo"><a href="/index.php/vod/detail/id/5554.html">逆天邪神</a><em>/</em></h5>
+                <div class="tipInfo">
+                    <div class="play-img"><img src="https://cn2.3days.cc/1556892675564595.jpeg" alt="逆天邪神" /></div>
+                    <dl>
+                        <dt>逆天邪神</dt>
+                        <dd><label>主演：</label></dd>
+                        <dd><label>剧情：</label>一代天才玄脉受损成为废物，家族摒弃，世人嘲笑，甚至新婚之夜遭人毒害玄天至宝，轮回镜现，逆天改命，重启人生，带着仇恨与遗憾，誓要登顶力量的…</dd>
+                        <dd class="bg">状态：<br />更新时间：2019-12-21 02:57:07</dd>
+                    </dl>
+                </div>
+            </div>
+            <div class="lasted-type fn-left"><a href="/index.php/vod/type/id/4.html"></a></div>
+            <div class="lasted-tags fn-left"><a href='/index.php/vod/list/area/%E4%B8%AD%E5%9B%BD%E5%A4%A7%E9%99%86/id/4.html' target='_blank'>中国大陆</a> </div>
+            <div class="lasted-time fn-right">2019-12-21</div>
+            </li>
+                        <li><div class="lasted-num fn-left">∷</div>
+            <div class="lasted-tit fn-left">
+                <h5 class="show-tipinfo"><a href="/index.php/vod/detail/id/5553.html">扭转乾坤2017</a><em>/</em></h5>
+                <div class="tipInfo">
+                    <div class="play-img"><img src="https://cn2.3days.cc/1576835451120505.jpeg" alt="扭转乾坤2017" /></div>
+                    <dl>
+                        <dt>扭转乾坤2017</dt>
+                        <dd><label>主演：</label>：露西·劳莱丝,梅兰妮·林斯基,尼古拉斯·加利齐纳,蒂莫西·斯波</dd>
+                        <dd><label>剧情：</label>改编自Margeret Mahy的卡内基奖章获奖小说十六岁的劳拉·尚特（Laura Chant）与她的母亲和四岁的哥哥杰克（Jacko）一起生活在一个贫穷的新郊区，在新西兰基督城部分被拆毁的边缘。劳拉…</dd>
+                        <dd class="bg">状态：<br />更新时间：2019-12-21 02:57:07</dd>
+                    </dl>
+                </div>
+            </div>
+            <div class="lasted-type fn-left"><a href="/index.php/vod/type/id/10.html"></a></div>
+            <div class="lasted-tags fn-left"><a href='/index.php/vod/list/area/%E7%BE%8E%E5%9B%BD/id/10.html' target='_blank'>美国</a> </div>
+            <div class="lasted-time fn-right">2019-12-21</div>
+            </li>
+                        <li><div class="lasted-num fn-left">∷</div>
+            <div class="lasted-tit fn-left">
+                <h5 class="show-tipinfo"><a href="/index.php/vod/detail/id/5552.html">陈二狗的妖孽人生第二季</a><em>/</em></h5>
+                <div class="tipInfo">
+                    <div class="play-img"><img src="https://cn2.3days.cc/1576770720413071.png" alt="陈二狗的妖孽人生第二季" /></div>
+                    <dl>
+                        <dt>陈二狗的妖孽人生第二季</dt>
+                        <dd><label>主演：</label>王姿允,赵炳锐,刘波,朱涵燕</dd>
+                        <dd><label>剧情：</label>《陈二狗的妖孽人生》第二季，由腾讯视频、上海浮生若梦文化传播有限公司制作出品，北京百思艺腾文化传媒有限公司联合出品，潘飞宇担任制片，黄凯执导，赵炳锐、王姿允、刘波、朱涵燕、扎卡、马翼、郭家诺、余思潞联…</dd>
+                        <dd class="bg">状态：<br />更新时间：2019-12-21 02:57:07</dd>
+                    </dl>
+                </div>
+            </div>
+            <div class="lasted-type fn-left"><a href="/index.php/vod/type/id/13.html"></a></div>
+            <div class="lasted-tags fn-left"><a href='/index.php/vod/list/area/%E4%B8%AD%E5%9B%BD%E5%A4%A7%E9%99%86/id/13.html' target='_blank'>中国大陆</a> </div>
+            <div class="lasted-time fn-right">2019-12-21</div>
+            </li>
+                        <li><div class="lasted-num fn-left">∷</div>
+            <div class="lasted-tit fn-left">
+                <h5 class="show-tipinfo"><a href="/index.php/vod/detail/id/5551.html">壹号皇庭</a><em>/</em></h5>
+                <div class="tipInfo">
+                    <div class="play-img"><img src="https://cn2.3days.cc/1576795053543050.jpeg" alt="壹号皇庭" /></div>
+                    <dl>
+                        <dt>壹号皇庭</dt>
+                        <dd><label>主演：</label>欧阳震华,陈秀雯,陶大宇,郑秀文</dd>
+                        <dd><label>剧情：</label>本剧通过十三个案例，讲述了香港一班正义的律师在法庭内唇枪舌战，在庭外经历个人的种种感情考验的经历一日，阿超伙同别人向阿权寻仇，当街斩杀阿权，警察周文彬（骆应钧 饰）恰巧在场，马上拘捕了阿超。检察官丁柔…</dd>
+                        <dd class="bg">状态：<br />更新时间：2019-12-21 02:57:07</dd>
+                    </dl>
+                </div>
+            </div>
+            <div class="lasted-type fn-left"><a href="/index.php/vod/type/id/13.html"></a></div>
+            <div class="lasted-tags fn-left"><a href='/index.php/vod/list/area/%E4%B8%AD%E5%9B%BD%E9%A6%99%E6%B8%AF/id/13.html' target='_blank'>中国香港</a> </div>
+            <div class="lasted-time fn-right">2019-12-21</div>
+            </li>
+                        <li><div class="lasted-num fn-left">∷</div>
+            <div class="lasted-tit fn-left">
+                <h5 class="show-tipinfo"><a href="/index.php/vod/detail/id/5550.html">爱的警报器</a><em>/</em></h5>
+                <div class="tipInfo">
+                    <div class="play-img"><img src="https://cn2.3days.cc/1567915752678062.jpeg" alt="爱的警报器" /></div>
+                    <dl>
+                        <dt>爱的警报器</dt>
+                        <dd><label>主演：</label>桑尼·苏瓦美塔农,黛薇卡·霍内</dd>
+                        <dd><label>剧情：</label>　　讲述一对情侣之间浪漫奇幻的故事，Tantawan（Mai饰）深爱着Peng（Sunny饰），Peng是一个冷酷的急诊室医生，两人交往了15年，两人都有特殊能力，能够冲破一切找到对方Tantawan…</dd>
+                        <dd class="bg">状态：<br />更新时间：2019-12-21 02:57:07</dd>
+                    </dl>
+                </div>
+            </div>
+            <div class="lasted-type fn-left"><a href="/index.php/vod/type/id/16.html"></a></div>
+            <div class="lasted-tags fn-left"><a href='/index.php/vod/list/area/%E6%B3%B0%E5%9B%BD/id/16.html' target='_blank'>泰国</a> </div>
+            <div class="lasted-time fn-right">2019-12-21</div>
+            </li>
+                        <li><div class="lasted-num fn-left">∷</div>
+            <div class="lasted-tit fn-left">
+                <h5 class="show-tipinfo"><a href="/index.php/vod/detail/id/5549.html">陈二狗的妖孽人生第一季</a><em>/</em></h5>
+                <div class="tipInfo">
+                    <div class="play-img"><img src="https://cn2.3days.cc/1576833596890871.jpeg" alt="陈二狗的妖孽人生第一季" /></div>
+                    <dl>
+                        <dt>陈二狗的妖孽人生第一季</dt>
+                        <dd><label>主演：</label>王姿允,赵炳锐,刘波,朱涵燕</dd>
+                        <dd><label>剧情：</label>一个农村刁民的逆天人生衣衫褴褛的老人蹲坐在破败房子前的白桦木墩子上，喝一口自制的烧酒，抽一口极烈的青蛤蟆旱烟，眯起眼睛，望着即将落入长白山脉的夕阳，朝身旁一个约莫六七岁、正陪着一黑一白两头土狗玩耍的小…</dd>
+                        <dd class="bg">状态：<br />更新时间：2019-12-21 02:57:07</dd>
+                    </dl>
+                </div>
+            </div>
+            <div class="lasted-type fn-left"><a href="/index.php/vod/type/id/13.html"></a></div>
+            <div class="lasted-tags fn-left"><a href='/index.php/vod/list/area/%E4%B8%AD%E5%9B%BD%E5%A4%A7%E9%99%86/id/13.html' target='_blank'>中国大陆</a> </div>
+            <div class="lasted-time fn-right">2019-12-21</div>
+            </li>
+                        <li><div class="lasted-num fn-left">∷</div>
+            <div class="lasted-tit fn-left">
+                <h5 class="show-tipinfo"><a href="/index.php/vod/detail/id/5548.html">凶煞吉时</a><em>/</em></h5>
+                <div class="tipInfo">
+                    <div class="play-img"><img src="https://cn2.3days.cc/1568524603171347.png" alt="凶煞吉时" /></div>
+                    <dl>
+                        <dt>凶煞吉时</dt>
+                        <dd><label>主演：</label>Sean,Jindachot,Milly,Camilla,Mos,Patiparn</dd>
+                        <dd><label>剧情：</label>一个女孩被发现以一种非常奇怪的方式被谋杀和埋藏，这使一位专门算吉时和命数的年轻占卜师 Maha Krating 开始警觉，他意识到这是一个古老的仪式，为了改变这座城市的命运而让它落入某人之手，这个仪式…</dd>
+                        <dd class="bg">状态：<br />更新时间：2019-12-21 02:57:07</dd>
+                    </dl>
+                </div>
+            </div>
+            <div class="lasted-type fn-left"><a href="/index.php/vod/type/id/16.html"></a></div>
+            <div class="lasted-tags fn-left"><a href='/index.php/vod/list/area/%E6%B3%B0%E5%89%A7/id/16.html' target='_blank'>泰剧</a> </div>
+            <div class="lasted-time fn-right">2019-12-21</div>
+            </li>
+                        </ul>
+    </div>
+</div>
+
+<!-- 页脚 -->
+<div class="footer">
+    <div class="foot-nav">
+                <a class="color" href="/index.php/vod/type/id/1.html" title="电影">电影</a>-
+                <a class="color" href="/index.php/vod/type/id/2.html" title="连续剧">连续剧</a>-
+                <a class="color" href="/index.php/vod/type/id/3.html" title="综艺">综艺</a>-
+                <a class="color" href="/index.php/vod/type/id/4.html" title="动漫">动漫</a>-
+                <a class="color" href="/index.php/art/type/id/5.html" title="资讯">资讯</a>-
+        
+        <a href="/index.php/map/index.html" title="最近更新">最近更新</a>-
+        <a href="/index.php/gbook/index.html" title="反馈留言">反馈留言</a>-
+        <a href="/index.php/rss/index.xml" title="rss">RSS</a>-
+        <a href="/index.php/rss/baidu.xml" target="_blank" title="网站地图">Sitemap</a>
+    </div>
+    <div class="copyright">
+        <p>免责声明：若本站收录的资源侵犯了您的权益，请发邮件至：123456@maccms.com，我们会及时删除侵权内容，谢谢合作！</p>
+        <p>Copyright &#169; 2012-2018 1.cn. All Rights Reserved. 统计代码 </p>
+    </div>
+</div>
+</body>
+</html>
